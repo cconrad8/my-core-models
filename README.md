@@ -1,48 +1,60 @@
-# core-models
+# What is Core Models
 
-conda create -n 'schematicpy' python=3.10
+# Schematic Setup and Usage Instructions
 
-conda init bash
-
-conda activate schematicpy
-
-pip install schematicpy
-
-wget https://raw.githubusercontent.com/Sage-Bionetworks/schematic/main/config_example.yml
-
-short term fix for verison issue: 
-
-``pip3 install ipython==8.18.1``
+## Setup
 
 
-$ echo $SCHEMATIC_SERVICE_ACCT_CREDS | base64 -d > creds.json
+1. **Create and activate a new conda environment:** (not sure if this step is needed)
+   ```bash
+   conda create -n 'schematicpy' python=3.10
+   conda init bash
+   conda activate schematicpy
+   ```
 
-$ schematic manifest -c config.yml get -t 'test' -s
+2. **Install schematicpy:**
+   ```bash
+   pip install schematicpy
+   ```
 
-$ schematic schema convert DUO-terms.jsonld
+3. **Download the configuration file:**
+   ```bash
+   wget https://raw.githubusercontent.com/Sage-Bionetworks/schematic/main/config_example.yml
+   ```
+ - make changes to the configuration file - this only has to be done once 
+4. **Short term fix for version issue:**
+   ```bash
+   pip3 install ipython==8.18.1
+   ```
 
-$ schematic manifest -c config.yml get -t 'test' -s -dt DUOTemplate
+## Using Schematic
 
+### Start Schematic
+```bash
+schematic
+```
 
-# using schematic
+### Make the Schematic Service Account Credential File
+```bash
+echo $SCHEMATIC_SERVICE_ACCT_CREDS | base64 -d > creds.json
+```
 
-start schematic: 
+### Test Creating a Google Sheet
+```bash
+schematic manifest -c config.yml get -t 'test' -s
+```
 
-``$ schematic`` 
+### Convert JSON-LD to JSON-LD with Schematic Friendly Formatting
+```bash
+schematic schema convert DUO-terms.jsonld
+```
 
-To make the schematic service account credential file:
+### Generate a Google Sheet Manifest
+```bash
+schematic manifest -c config.yml get -t 'test' -s -dt DUOTemplate
+```
 
-``$ echo $SCHEMATIC_SERVICE_ACCT_CREDS | base64 -d > creds.json``
+---
 
-To test creating a google sheet:
-
-``$ schematic manifest -c config_copy.yml get -t 'test' -s``
-
-To convert jsonld to jsonld with schematic friendly formatting:
-
-``$ schematic schema convert DUO-terms.jsonld``
-
-To generate a google sheet manifest:
-
-``$ schematic manifest -c config_copy.yml get -t 'test' -s -dt DUOTemplate``
+These instructions provide a step-by-step guide to setting up and using the Schematic tool for managing data and schemas.
 
