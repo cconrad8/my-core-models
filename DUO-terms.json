@@ -4,98 +4,606 @@
     },
     "@graph": [
         {
+            "@id": "bts:CCBY",
             "@type": "rdfs:Class",
-            "rdfs:label": "CC BY",
-            "sms:displayName": "CC BY"
-        },
-        {
-            "@type": "rdfs:Class",
-            "rdfs:label": "CC BY-NC",
-            "sms:displayName": "CC BY-NC"
-        },
-        {
-            "@type": "rdfs:Class",
-            "rdfs:label": "CC BY-SA",
-            "sms:displayName": "CC BY-SA"
-        },
-        {
-            "@id": "Dataset_DUO",
-            "@type": "rdfs:Class",
-            "rdfs:label": "Dataset_DUO",
-            "sms:displayName": "Dataset_DUO",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "CCBY",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:DUOplus6"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "CCBY",
             "sms:required": "sms:false"
         },
         {
-            "@id": "bts:DUOComponent",
+            "@id": "bts:CCBYNC",
             "@type": "rdfs:Class",
-            "rdfs:label": "DUO Component",
-            "sms:displayName": "DUO Component",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "CCBYNC",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:DUOplus6"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "CCBYNC",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:CCBYSA",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "CCBYSA",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:DUOplus6"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "CCBYSA",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000004",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "No Restriction (NRES)",
+            "rdfs:label": "DUO0000004",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000004",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000006",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Health or Medical or Biomedical Research (HMB)",
+            "rdfs:label": "DUO0000006",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000006",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000007",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Disease Specific Research (DS)",
+            "rdfs:label": "DUO0000007",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000007",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:DUO0000011",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Population Origins or Ancestry Research Only (POA)",
+            "rdfs:label": "DUO0000011",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000011",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000012",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Research Specific Restrictions (RS)",
+            "rdfs:label": "DUO0000012",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000012",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:DUO0000015",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "No General Methods Research (NMDS)",
+            "rdfs:label": "DUO0000015",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000015",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000016",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Genetic Studies Only (GSO)",
+            "rdfs:label": "DUO0000016",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000016",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000018",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "NPUNCU",
+            "rdfs:label": "DUO0000018",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000018",
+            "sms:required": "sms:true"
+        },
+        {
+            "@id": "bts:DUO0000019",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Publication Required (PUB)",
+            "rdfs:label": "DUO0000019",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000019",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000020",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Collaboration Required (COL)",
+            "rdfs:label": "DUO0000020",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000020",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:DUO0000021",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "IRB",
+            "rdfs:label": "DUO0000021",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000021",
+            "sms:required": "sms:true"
+        },
+        {
+            "@id": "bts:DUO0000022",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Geographical Restriction (GS)",
+            "rdfs:label": "DUO0000022",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000022",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:DUO0000024",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Publication Moratorium (MOR)",
+            "rdfs:label": "DUO0000024",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
+                },
+                {
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000024",
+            "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:DUO_0000043"
+                    "@id": "bts:DUO0000022"
+                }
+            ]
+        },
+        {
+            "@id": "bts:DUO0000025",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Time Limit on Use (TS), User prompted to renew access every x days with current evidence",
+            "rdfs:label": "DUO0000025",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000025",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:DUO0000026",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "User Specific Restriction\t(US), User may be required to join a Synapse Team",
+            "rdfs:label": "DUO0000026",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000026",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:DUO0000027",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Project Specific Restriction (PS), User prompted to provide IDU statement",
+            "rdfs:label": "DUO0000027",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
                 },
                 {
-                    "@id": "bts:DUO_0000020"
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000027",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000028",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Institution Specific Restriction\t(IS)",
+            "rdfs:label": "DUO0000028",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000028",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:DUO0000029",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Return to Database or Resource (RTN)",
+            "rdfs:label": "DUO0000029",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000029",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000042",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "General Research Use (GRU)",
+            "rdfs:label": "DUO0000042",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
                 },
                 {
-                    "@id": "bts:DUO_0000021"
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000042",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000043",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Clinical Care Use (CC)",
+            "rdfs:label": "DUO0000043",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
                 },
                 {
-                    "@id": "bts:DUO_0000042"
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000043",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000044",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Population Origins or Ancestry Research Prohibited (NPOA)",
+            "rdfs:label": "DUO0000044",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUO_0000044",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000045",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Not-for-Profit Organisation Use Only (NPU)",
+            "rdfs:label": "DUO0000045",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
                 },
                 {
-                    "@id": "bts:DUO_0000007"
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000045",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUO0000046",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Non-Commercial Use Only (NCU)",
+            "rdfs:label": "DUO0000046",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:TRUE"
                 },
                 {
-                    "@id": "bts:DUO_0000016"
+                    "@id": "bts:FALSE"
+                }
+            ],
+            "sms:displayName": "DUO_0000046",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUOplus2",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Study Size",
+            "rdfs:label": "DUOplus2",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUOplus2",
+            "sms:required": "sms:true",
+            "sms:validationRules": [
+                "num"
+            ]
+        },
+        {
+            "@id": "bts:DUOplus3",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Deidentifcation",
+            "rdfs:label": "DUOplus3",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUOplus3",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "list"
+            ]
+        },
+        {
+            "@id": "bts:DUOplus4",
+            "@type": "rdfs:Class",
+            "rdfs:comment": " Agreement, Attestation, Award, Other [Identifier?]",
+            "rdfs:label": "DUOplus4",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUOplus4",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "list"
+            ]
+        },
+        {
+            "@id": "bts:DUOplus5",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Data Tier, Anonymous, Open (aka Registered), Controlled, Private",
+            "rdfs:label": "DUOplus5",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUOplus5",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "list"
+            ]
+        },
+        {
+            "@id": "bts:DUOplus6",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "License (CC BY, CC BY-SA, CC BY-NC, CC BY-NC-SA)",
+            "rdfs:label": "DUOplus6",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:CCBY"
                 },
                 {
-                    "@id": "bts:DUO_0000006"
+                    "@id": "bts:CCBYNC"
                 },
                 {
-                    "@id": "bts:DUO_0000022"
+                    "@id": "bts:CCBYSA"
+                }
+            ],
+            "sms:displayName": "DUOplus6",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "bts:DUOplus7",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Attribution, Provide attribution/acknowledgement statement",
+            "rdfs:label": "DUOplus7",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUOplus7",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "str"
+            ]
+        },
+        {
+            "@id": "bts:DUOTemplate",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "DUOTemplate",
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DUOTemplate",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:DUO0000043"
                 },
                 {
-                    "@id": "bts:DUO_0000028"
+                    "@id": "bts:DUO0000020"
                 },
                 {
-                    "@id": "bts:DUO_0000015"
+                    "@id": "bts:DUO0000042"
                 },
                 {
-                    "@id": "bts:DUO_0000045"
+                    "@id": "bts:DUO0000007"
                 },
                 {
-                    "@id": "bts:DUO_0000044"
+                    "@id": "bts:DUO0000016"
                 },
                 {
-                    "@id": "bts:DUO_0000011"
+                    "@id": "bts:DUO0000006"
                 },
                 {
-                    "@id": "bts:DUO_0000046"
+                    "@id": "bts:DUO0000028"
                 },
                 {
-                    "@id": "bts:DUO_0000018"
+                    "@id": "bts:DUO0000015"
                 },
                 {
-                    "@id": "bts:DUO_0000024"
+                    "@id": "bts:DUO0000004"
                 },
                 {
-                    "@id": "bts:DUO_0000027"
+                    "@id": "bts:DUO0000045"
                 },
                 {
-                    "@id": "bts:DUO_0000019"
+                    "@id": "bts:DUO0000044"
                 },
                 {
-                    "@id": "bts:DUO_0000012"
+                    "@id": "bts:DUO0000011"
                 },
                 {
-                    "@id": "bts:DUO_0000025"
+                    "@id": "bts:DUO0000046"
                 },
                 {
-                    "@id": "bts:DUO_0000029"
+                    "@id": "bts:DUO0000018"
                 },
                 {
-                    "@id": "bts:DUO_0000026"
+                    "@id": "bts:DUO0000024"
+                },
+                {
+                    "@id": "bts:DUO0000027"
+                },
+                {
+                    "@id": "bts:DUO0000019"
+                },
+                {
+                    "@id": "bts:DUO0000012"
+                },
+                {
+                    "@id": "bts:DUO0000025"
+                },
+                {
+                    "@id": "bts:DUO0000029"
                 },
                 {
                     "@id": "bts:DUOplus1"
@@ -114,415 +622,75 @@
                 },
                 {
                     "@id": "bts:DUOplus6"
+                },
+                {
+                    "@id": "bts:DUOplus7"
+                },
+                {
+                    "@id": "bts:DUO0000026"
+                },
+                {
+                    "@id": "bts:DUO0000020"
+                },
+                {
+                    "@id": "bts:DUO0000022"
                 }
             ]
         },
         {
-            "@id": "bts:DUO_0000004",
+            "@id": "bts:FALSE",
             "@type": "rdfs:Class",
-            "rdfs:comment": "NRES",
-            "rdfs:label": "DUO_0000004",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
-                },
-                {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000004",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000006",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "HMB",
-            "rdfs:label": "DUO_0000006",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
-                },
-                {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000006",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000007",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "DS",
-            "rdfs:label": "DUO_0000007",
+            "rdfs:comment": "Statement is false",
+            "rdfs:label": "FALSE",
             "rdfs:subClassOf": [
                 {
-                    "@id": "Dataset_DUO"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "sms:displayName": "DUO_0000007",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:DUO_0000011",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "POA",
-            "rdfs:label": "DUO_0000011",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000004"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000011",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000012",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "RS",
-            "rdfs:label": "DUO_0000012",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "sms:displayName": "DUO_0000012",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:DUO_0000015",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "NMDS",
-            "rdfs:label": "DUO_0000015",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000006"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000015",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000016",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "GSO",
-            "rdfs:label": "DUO_0000016",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000011"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000016",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000018",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "NPUNCU",
-            "rdfs:label": "DUO_0000018",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000015"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000018",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000019",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "PUB",
-            "rdfs:label": "DUO_0000019",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000016"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000019",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000020",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "COL",
-            "rdfs:label": "DUO_0000020",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "sms:displayName": "DUO_0000020",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:DUO_0000021",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "IRB",
-            "rdfs:label": "DUO_0000021",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000018"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000021",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000022",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "GS",
-            "rdfs:label": "DUO_0000022",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "sms:displayName": "DUO_0000022",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:DUO_0000024",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "MOR",
-            "rdfs:label": "DUO_0000024",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000019"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000024",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000025",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TS",
-            "rdfs:label": "DUO_0000025",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "sms:displayName": "DUO_0000025",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:DUO_0000026",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "US",
-            "rdfs:label": "DUO_0000026",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "sms:displayName": "DUO_0000026",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:DUO_0000027",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "PS",
-            "rdfs:label": "DUO_0000027",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000021"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000027",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000028",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "IS",
-            "rdfs:label": "DUO_0000028",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "sms:displayName": "DUO_0000028",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:DUO_0000029",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "RTN",
-            "rdfs:label": "DUO_0000029",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000024"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000029",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000042",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "GRU",
-            "rdfs:label": "DUO_0000042",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000027"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000042",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000043",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "CC",
-            "rdfs:label": "DUO_0000043",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000042"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000043",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000044",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "NPOA",
-            "rdfs:label": "DUO_0000044",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000043"
                 },
                 {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000044",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000045",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "NPU",
-            "rdfs:label": "DUO_0000045",
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
+                    "@id": "bts:DUO0000045"
                 },
                 {
-                    "@id": "false"
+                    "@id": "bts:DUO0000046"
                 }
             ],
-            "sms:displayName": "DUO_0000045",
-            "sms:required": "sms:true"
-        },
-        {
-            "@id": "bts:DUO_0000046",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "NCU",
-            "rdfs:label": "DUO_0000046",
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
+                "@id": "http://schema.biothings.io"
             },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "true"
-                },
-                {
-                    "@id": "false"
-                }
-            ],
-            "sms:displayName": "DUO_0000046",
-            "sms:required": "sms:true"
+            "sms:displayName": "FALSE",
+            "sms:required": "sms:false"
         },
         {
             "@id": "bts:DUOplus1",
@@ -530,86 +698,78 @@
             "rdfs:comment": "Source Geography",
             "rdfs:label": "DUOplus1",
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
+                "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "DUOplus1",
+            "sms:displayName": "Source Geography",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "list"
             ]
         },
         {
-            "@id": "bts:DUOplus2",
+            "@id": "bts:Thing",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Study Size",
-            "rdfs:label": "DUOplus2",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Thing",
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io/"
+                "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "DUOplus2",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "num"
-            ]
-        },
-        {
-            "@id": "bts:DUOplus3",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Deidentifcation",
-            "rdfs:label": "DUOplus3",
-            "sms:displayName": "DUOplus3"
-        },
-        {
-            "@id": "bts:DUOplus4",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Data Permission",
-            "rdfs:label": "DUOplus4",
-            "sms:displayName": "DUOplus4"
-        },
-        {
-            "@id": "bts:DUOplus5",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Data Tier",
-            "rdfs:label": "DUOplus5",
-            "sms:displayName": "DUOplus5"
-        },
-        {
-            "@id": "bts:DUOplus6",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "License",
-            "rdfs:label": "DUOplus6",
-            "schema:rangeIncludes": [
-                {
-                    "@id": "CC BY"
-                },
-                {
-                    "@id": "CC BY-SA"
-                },
-                {
-                    "@id": "CC BY-NC"
-                }
-            ],
-            "sms:displayName": "DUOplus6"
-        },
-        {
-            "@id": "bts:DUOplus7",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Attribution",
-            "rdfs:label": "DUOplus7",
-            "sms:displayName": "DUOplus7"
-        },
-        {
-            "@id": "false",
-            "@type": "rdfs:Class",
-            "rdfs:label": "false",
-            "sms:displayName": "false",
+            "sms:displayName": "Thing",
             "sms:required": "sms:false"
         },
         {
-            "@id": "true",
+            "@id": "bts:TRUE",
             "@type": "rdfs:Class",
-            "rdfs:label": "true",
-            "sms:displayName": "true",
+            "rdfs:comment": "Statement is true",
+            "rdfs:label": "TRUE",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:DUO0000004"
+                },
+                {
+                    "@id": "bts:DUO0000006"
+                },
+                {
+                    "@id": "bts:DUO0000011"
+                },
+                {
+                    "@id": "bts:DUO0000015"
+                },
+                {
+                    "@id": "bts:DUO0000016"
+                },
+                {
+                    "@id": "bts:DUO0000018"
+                },
+                {
+                    "@id": "bts:DUO0000019"
+                },
+                {
+                    "@id": "bts:DUO0000021"
+                },
+                {
+                    "@id": "bts:DUO0000024"
+                },
+                {
+                    "@id": "bts:DUO0000027"
+                },
+                {
+                    "@id": "bts:DUO0000042"
+                },
+                {
+                    "@id": "bts:DUO0000043"
+                },
+                {
+                    "@id": "bts:DUO0000045"
+                },
+                {
+                    "@id": "bts:DUO0000046"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "TRUE",
             "sms:required": "sms:false"
         }
     ]
