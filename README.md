@@ -1,6 +1,14 @@
-# What is Core Models
+# What is Core-Models Repository
+
+This repository hosts data models sourced from various projects within Sage. All data models included here must be publicly accessible.
+
+These data models are generated using the CoreModels software (coremodels.io). This platform enables users to interact with data models visually, facilitating their creation and management. Once created, the data models are exported as .jsonld files, such as DUO-terms.jsonld, and pushed to this GitHub repository.
+
+Future development efforts will focus on expanding the generation of core models across Sage in a jsonld format. This will enhance the interoperability and accessibility of data models within the organization.
 
 # Schematic Setup and Usage Instructions
+
+These instructions provide a step-by-step guide to setting up and using the Schematic tool for managing data and schemas.
 
 ## Setup
 
@@ -56,5 +64,4 @@ schematic manifest -c config.yml get -t 'test' -s -dt DUOTemplate
 
 ---
 
-These instructions provide a step-by-step guide to setting up and using the Schematic tool for managing data and schemas.
 
