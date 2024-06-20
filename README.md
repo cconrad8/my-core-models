@@ -42,7 +42,7 @@ These instructions provide a step-by-step guide to setting up and using the Sche
 schematic
 ```
 
-### Make the Schematic Service Account Credential File
+### Each time you run codespace: Make the Schematic Service Account Credential File
 ```bash
 echo $SCHEMATIC_SERVICE_ACCT_CREDS | base64 -d > creds.json
 ```
@@ -55,6 +55,14 @@ schematic manifest -c config.yml get -t 'test' -s
 ### Convert JSON-LD to JSON-LD with Schematic Friendly Formatting
 ```bash
 schematic schema convert DUO-terms.jsonld
+```
+
+### To generate manifest:
+Change location inside config.yml to the jsonld you want to create the template from. 
+```yaml
+  # Location of your schema jsonld, it must be a path relative to this file or absolute
+  location: "DUO-terms.jsonld"
+
 ```
 
 ### Generate a Google Sheet Manifest
