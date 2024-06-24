@@ -405,6 +405,12 @@
                 },
                 {
                     "@id": "bts:License"
+                },
+                {
+                    "@id": "bts:StudyId"
+                },
+                {
+                    "@id": "bts:StudyName"
                 }
             ],
             "sms:validationRules": []
@@ -423,6 +429,40 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "StudySize",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:StudyId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "StudyId",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:DUOTemplate"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "StudyId",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:StudyName",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "StudyName",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:DUOTemplate"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "StudyName",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -797,40 +837,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "RegisteredUsers",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:StudyId",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "StudyId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:DUOTemplate"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "StudyId",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:StudyName",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "StudyName",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:DUOTemplate"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "StudyName",
             "sms:required": "sms:false",
             "sms:validationRules": []
         }

@@ -33,6 +33,6 @@
 ### Common Errors 
 
 Not having the "label" column filled out will result in the schema convert function not working
-
+Not having "bts:" results in error for schema convert 
 
 ### Tips
