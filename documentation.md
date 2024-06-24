@@ -30,3 +30,9 @@
 
 
 
+### Common Errors 
+
+Not having the "label" column filled out will result in the schema convert function not working
+
+
+### Tips
