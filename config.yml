@@ -30,7 +30,7 @@ manifest:
 # Describes the location of your schema
 model:
   # Location of your schema jsonld, it must be a path relative to this file or absolute
-  location: "/workspaces/core-models/draft-data-models/DUO-terms.jsonld"
+  location: "/workspaces/core-models/draft-data-models/challenges.jsonld"
 
 # This section is for using google sheets with Schematic
 google_sheets:

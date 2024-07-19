@@ -71,5 +71,16 @@ schematic manifest -c config.yml get -t 'test' -s -dt DUOTemplate
 ```
 
 ---
+### examples for challenges
+```bash
+schematic manifest -c config.yml get -t 'ChallengePlatform' -s -dt ChallengePlatform -o '/workspaces/core-models/challenges-manifests/ChallengePlatform.csv'
+schematic manifest -c config.yml get -t 'ChallengeSubmissionType' -s -dt ChallengeSubmissionType -o '/workspaces/core-models/challenges-manifests/ChallengeSubmissionType.csv'
+schematic manifest -c config.yml get -t 'ChallengeIncentive' -s -dt ChallengeIncentive -o '/workspaces/core-models/challenges-manifests/ChallengeIncentive.csv'
+schematic manifest -c config.yml get -t 'ChallengeCategory' -s -dt ChallengeCategory -o '/workspaces/core-models/challenges-manifests/ChallengeCategory.csv'
+schematic manifest -c config.yml get -t 'ChallengeContribution' -s -dt ChallengeContribution -o '/workspaces/core-models/challenges-manifests/ChallengeContribution.csv'
+schematic manifest -c config.yml get -t 'Challenge' -s -dt Challenge -o '/workspaces/core-models/challenges-manifests/Challenge.csv'
+schematic manifest -c config.yml get -t 'ChallengeInputDataType' -s -dt ChallengeInputDataType -o '/workspaces/core-models/challenges-manifests/ChallengeInputDataType.csv'
+schematic manifest -c config.yml get -t 'EdamConcept' -s -dt EdamConcept -o '/workspaces/core-models/challenges-manifests/EdamConcept.csv'
+```
 
 
