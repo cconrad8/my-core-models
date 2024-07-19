@@ -44,6 +44,23 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:Thing",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Thing",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Thing",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:BMI",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -403,6 +420,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "demographics",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Consent",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Consent",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "consent",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -1829,19 +1863,36 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:20.3184%;\"> </td><tdstyle=\"width:15.9644%;text-align:center;\"><p>LabValue</p><p><spanstyle=\"font-weight:normal;\">(enter9999ifnotdone)</span></p></td><tdstyle=\"width:13.7173%;text-align:center;\">Units</td><tdstyle=\"width:16.6667%;text-align:center;\">AbnormalorCS?</td><tdstyle=\"width:19.8389%;text-align:center;\">DoneatOutsideLab</td><tdstyle=\"width:10.5562%;text-align:center;\">ReferenceRange<spanstyle=\"font-weight:normal;\"><br/></span></td></tr><tr><tdstyle=\"width:20.3184%;\">Sodium</td><tdstyle=\"width:15.9644%;\">{sodium}</td><tdstyle=\"width:13.7173%;text-align:center;\">mEq/L</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Potassium</td><tdstyle=\"width:15.9644%;\">{potassium}</td><tdstyle=\"width:13.7173%;text-align:center;\">mEq/L</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Chloride</td><tdstyle=\"width:15.9644%;\">{chloride}</td><tdstyle=\"width:13.7173%;text-align:center;\">mEq/L</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">CO2</td><tdstyle=\"width:15.9644%;\">{co2}</td><tdstyle=\"width:13.7173%;text-align:center;\">mEq/L</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Glucose</td><tdstyle=\"width:15.9644%;\">{glucose}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">BUN</td><tdstyle=\"width:15.9644%;\">{bun}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">CalculatedCreatinineClearance</td><tdstyle=\"width:15.9644%;\">{creatClear}</td><tdstyle=\"width:13.7173%;text-align:center;\">mL/min</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Creatinine</td><tdstyle=\"width:15.9644%;\">{creatinine}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\">{creatAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{creatOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{creatRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">Calcium</td><tdstyle=\"width:15.9644%;\">{calcium}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Phosphate</td><tdstyle=\"width:15.9644%;\">{phosphate}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">TotalProtein</td><tdstyle=\"width:15.9644%;\">{totalProtein}</td><tdstyle=\"width:13.7173%;text-align:center;\">g/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Albumin</td><tdstyle=\"width:15.9644%;\">{albumin}</td><tdstyle=\"width:13.7173%;text-align:center;\">g/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">AlkalinePhosphate</td><tdstyle=\"width:15.9644%;\">{alkphos}</td><tdstyle=\"width:13.7173%;text-align:center;\">U/L</td><tdstyle=\"width:16.6667%;text-align:center;\">{alkphosAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{alkpOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{alkphosRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">AST</td><tdstyle=\"width:15.9644%;\">{ast}</td><tdstyle=\"width:13.7173%;text-align:center;\">IU/L</td><tdstyle=\"width:16.6667%;text-align:center;\">{astAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{astOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{astRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">ALT</td><tdstyle=\"width:15.9644%;\">{alt}</td><tdstyle=\"width:13.7173%;text-align:center;\">U/L</td><tdstyle=\"width:16.6667%;text-align:center;\">{altAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{altOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{altRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">TotalBilirubin</td><tdstyle=\"width:15.9644%;\">{tBili}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\">{tbiliAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{tbiliOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{tbiliRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">DirectBilirubin</td><tdstyle=\"width:15.9644%;\">{dirBili}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\">{dirbiliAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{dirbiliOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{dirbiliRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">Magnesium</td><tdstyle=\"width:15.9644%;\">{magnesium}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr></tbody></table><p> </p></div>",
+            "@id": "bts:Collapse;width",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:20.3184%;\"> </td><tdstyle=\"width:15.9644%;text-align:center;\"><p>LabValue</p><p><spanstyle=\"font-weight:normal;\">(enter9999ifnotdone)</span></p></td><tdstyle=\"width:13.7173%;text-align:center;\">Units</td><tdstyle=\"width:16.6667%;text-align:center;\">AbnormalorCS?</td><tdstyle=\"width:19.8389%;text-align:center;\">DoneatOutsideLab</td><tdstyle=\"width:10.5562%;text-align:center;\">ReferenceRange<spanstyle=\"font-weight:normal;\"><br/></span></td></tr><tr><tdstyle=\"width:20.3184%;\">Sodium</td><tdstyle=\"width:15.9644%;\">{sodium}</td><tdstyle=\"width:13.7173%;text-align:center;\">mEq/L</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Potassium</td><tdstyle=\"width:15.9644%;\">{potassium}</td><tdstyle=\"width:13.7173%;text-align:center;\">mEq/L</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Chloride</td><tdstyle=\"width:15.9644%;\">{chloride}</td><tdstyle=\"width:13.7173%;text-align:center;\">mEq/L</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">CO2</td><tdstyle=\"width:15.9644%;\">{co2}</td><tdstyle=\"width:13.7173%;text-align:center;\">mEq/L</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Glucose</td><tdstyle=\"width:15.9644%;\">{glucose}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">BUN</td><tdstyle=\"width:15.9644%;\">{bun}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">CalculatedCreatinineClearance</td><tdstyle=\"width:15.9644%;\">{creatClear}</td><tdstyle=\"width:13.7173%;text-align:center;\">mL/min</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Creatinine</td><tdstyle=\"width:15.9644%;\">{creatinine}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\">{creatAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{creatOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{creatRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">Calcium</td><tdstyle=\"width:15.9644%;\">{calcium}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Phosphate</td><tdstyle=\"width:15.9644%;\">{phosphate}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">TotalProtein</td><tdstyle=\"width:15.9644%;\">{totalProtein}</td><tdstyle=\"width:13.7173%;text-align:center;\">g/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">Albumin</td><tdstyle=\"width:15.9644%;\">{albumin}</td><tdstyle=\"width:13.7173%;text-align:center;\">g/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr><tr><tdstyle=\"width:20.3184%;\">AlkalinePhosphate</td><tdstyle=\"width:15.9644%;\">{alkphos}</td><tdstyle=\"width:13.7173%;text-align:center;\">U/L</td><tdstyle=\"width:16.6667%;text-align:center;\">{alkphosAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{alkpOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{alkphosRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">AST</td><tdstyle=\"width:15.9644%;\">{ast}</td><tdstyle=\"width:13.7173%;text-align:center;\">IU/L</td><tdstyle=\"width:16.6667%;text-align:center;\">{astAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{astOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{astRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">ALT</td><tdstyle=\"width:15.9644%;\">{alt}</td><tdstyle=\"width:13.7173%;text-align:center;\">U/L</td><tdstyle=\"width:16.6667%;text-align:center;\">{altAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{altOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{altRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">TotalBilirubin</td><tdstyle=\"width:15.9644%;\">{tBili}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\">{tbiliAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{tbiliOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{tbiliRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">DirectBilirubin</td><tdstyle=\"width:15.9644%;\">{dirBili}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\">{dirbiliAbn}</td><tdstyle=\"width:19.8389%;text-align:center;\">{dirbiliOutlab}</td><tdstyle=\"width:10.5562%;text-align:center;\">{dirbiliRefrange}</td></tr><tr><tdstyle=\"width:20.3184%;\">Magnesium</td><tdstyle=\"width:15.9644%;\">{magnesium}</td><tdstyle=\"width:13.7173%;text-align:center;\">mg/dL</td><tdstyle=\"width:16.6667%;text-align:center;\"> </td><tdstyle=\"width:19.8389%;text-align:center;\"> </td><tdstyle=\"width:10.5562%;text-align:center;\"> </td></tr></tbody></table><p> </p></div>",
+            "rdfs:label": "Collapse;width",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Chemistry"
+                    "@id": "bts:Pmdc"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": " collapse; width",
+            "sms:displayName": "collapse; width",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Pmdc",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Pmdc",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "pmdc",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -3301,23 +3352,6 @@
             ]
         },
         {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:33.3333%;\"> </td><tdstyle=\"width:33.3333%;\">LabValue<spanstyle=\"font-weight:normal;\">(enter\"9999\"ifnotdone)</span></td><tdstyle=\"width:33.3333%;\">Units</td></tr><tr><tdstyle=\"width:33.3333%;\">WBC</td><tdstyle=\"width:33.3333%;\">{wbc}</td><tdstyle=\"width:33.3333%;\">k/cumm</td></tr><tr><tdstyle=\"width:33.3333%;\">RBC</td><tdstyle=\"width:33.3333%;\">{rbc}</td><tdstyle=\"width:33.3333%;\">k/cumm</td></tr><tr><tdstyle=\"width:33.3333%;\">Hemoglobin</td><tdstyle=\"width:33.3333%;\">{hgb}</td><tdstyle=\"width:33.3333%;\">g/dL</td></tr><tr><tdstyle=\"width:33.3333%;\">Hematocrit</td><tdstyle=\"width:33.3333%;\">{hct}</td><tdstyle=\"width:33.3333%;\">%</td></tr><tr><tdstyle=\"width:33.3333%;\">PlateletCount</td><tdstyle=\"width:33.3333%;\">{platelets}</td><tdstyle=\"width:33.3333%;\">k/cumm</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteNeutrophilCount</td><tdstyle=\"width:33.3333%;\">{anc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteLymphocyteCount</td><tdstyle=\"width:33.3333%;\">{alc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteMonocyteCount</td><tdstyle=\"width:33.3333%;\">{amc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteEosinophilCount</td><tdstyle=\"width:33.3333%;\">{aec}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteBasophilCount</td><tdstyle=\"width:33.3333%;\">{abc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteImmatureGranulocyteCount</td><tdstyle=\"width:33.3333%;\">{aigc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr></tbody></table><p> </p></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:33.3333%;\"> </td><tdstyle=\"width:33.3333%;\">LabValue<spanstyle=\"font-weight:normal;\">(enter\"9999\"ifnotdone)</span></td><tdstyle=\"width:33.3333%;\">Units</td></tr><tr><tdstyle=\"width:33.3333%;\">WBC</td><tdstyle=\"width:33.3333%;\">{wbc}</td><tdstyle=\"width:33.3333%;\">k/cumm</td></tr><tr><tdstyle=\"width:33.3333%;\">RBC</td><tdstyle=\"width:33.3333%;\">{rbc}</td><tdstyle=\"width:33.3333%;\">k/cumm</td></tr><tr><tdstyle=\"width:33.3333%;\">Hemoglobin</td><tdstyle=\"width:33.3333%;\">{hgb}</td><tdstyle=\"width:33.3333%;\">g/dL</td></tr><tr><tdstyle=\"width:33.3333%;\">Hematocrit</td><tdstyle=\"width:33.3333%;\">{hct}</td><tdstyle=\"width:33.3333%;\">%</td></tr><tr><tdstyle=\"width:33.3333%;\">PlateletCount</td><tdstyle=\"width:33.3333%;\">{platelets}</td><tdstyle=\"width:33.3333%;\">k/cumm</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteNeutrophilCount</td><tdstyle=\"width:33.3333%;\">{anc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteLymphocyteCount</td><tdstyle=\"width:33.3333%;\">{alc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteMonocyteCount</td><tdstyle=\"width:33.3333%;\">{amc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteEosinophilCount</td><tdstyle=\"width:33.3333%;\">{aec}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteBasophilCount</td><tdstyle=\"width:33.3333%;\">{abc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr><tr><tdstyle=\"width:33.3333%;\">AbsoluteImmatureGranulocyteCount</td><tdstyle=\"width:33.3333%;\">{aigc}</td><tdstyle=\"width:33.3333%;\">k/cumm(calculateusing%andWBCcountifnotdone)</td></tr></tbody></table><p> </p></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Hematology"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:Werehematologylabscollected?",
             "@type": "rdfs:Class",
             "rdfs:comment": "If no, please add to protocol deviation log ",
@@ -3524,23 +3558,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"><tbody><tr><tdstyle=\"width:33.3333%;\">iRECISTNewLesionTargetSum</td><tdstyle=\"width:33.3333%;\">iRECIST%Change</td><tdstyle=\"width:33.3333%;\">iRECISTResponse</td></tr><tr><tdstyle=\"width:33.3333%;\">{sumIrecist}</td><tdstyle=\"width:33.3333%;\">{irecistChange}</td><tdstyle=\"width:33.3333%;\">{irecistResponse}</td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"><tbody><tr><tdstyle=\"width:33.3333%;\">iRECISTNewLesionTargetSum</td><tdstyle=\"width:33.3333%;\">iRECIST%Change</td><tdstyle=\"width:33.3333%;\">iRECISTResponse</td></tr><tr><tdstyle=\"width:33.3333%;\">{sumIrecist}</td><tdstyle=\"width:33.3333%;\">{irecistChange}</td><tdstyle=\"width:33.3333%;\">{irecistResponse}</td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:IRECISTResponse",
             "@type": "rdfs:Class",
             "rdfs:comment": "Until there is RECIST PD, the RECIST and iRECIST assessment do not differ (e.g.  SD=iSD)",
@@ -3692,40 +3709,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Test used to determine MSI status",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:33.3333%;\"> </td><tdstyle=\"width:47.5156%;text-align:center;\">Location/Decription</td><tdstyle=\"width:19.151%;text-align:center;\">Size(mm)</td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMeasurableLesion1</p></td><tdstyle=\"width:47.5156%;\"><p>{new1}</p></td><tdstyle=\"width:19.151%;\"><p>{new1size}</p></td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMeasurableLesion2</p></td><tdstyle=\"width:47.5156%;\"><p>{new2}</p></td><tdstyle=\"width:19.151%;\"><p>{new2size}</p></td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMesurableLesion3</p></td><tdstyle=\"width:47.5156%;\"><p>{new3}</p></td><tdstyle=\"width:19.151%;\"><p>{new3size}</p></td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMesurableLesion4</p></td><tdstyle=\"width:47.5156%;\"><p>{new4}</p></td><tdstyle=\"width:19.151%;\"><p>{new4size}</p></td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMesurableLesion5</p></td><tdstyle=\"width:47.5156%;\"><p>{new5}</p></td><tdstyle=\"width:19.151%;\"><p>{new5size}</p></td></tr></tbody></table><p> </p></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:33.3333%;\"> </td><tdstyle=\"width:47.5156%;text-align:center;\">Location/Decription</td><tdstyle=\"width:19.151%;text-align:center;\">Size(mm)</td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMeasurableLesion1</p></td><tdstyle=\"width:47.5156%;\"><p>{new1}</p></td><tdstyle=\"width:19.151%;\"><p>{new1size}</p></td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMeasurableLesion2</p></td><tdstyle=\"width:47.5156%;\"><p>{new2}</p></td><tdstyle=\"width:19.151%;\"><p>{new2size}</p></td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMesurableLesion3</p></td><tdstyle=\"width:47.5156%;\"><p>{new3}</p></td><tdstyle=\"width:19.151%;\"><p>{new3size}</p></td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMesurableLesion4</p></td><tdstyle=\"width:47.5156%;\"><p>{new4}</p></td><tdstyle=\"width:19.151%;\"><p>{new4size}</p></td></tr><tr><tdstyle=\"width:33.3333%;\"><p>NewMesurableLesion5</p></td><tdstyle=\"width:47.5156%;\"><p>{new5}</p></td><tdstyle=\"width:19.151%;\"><p>{new5size}</p></td></tr></tbody></table><p> </p></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:25%;\"> </td><tdstyle=\"width:25%;\">Location/Description</td><tdstyle=\"width:50%;\">Status</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion1</td><tdstyle=\"width:25%;\">{newnm1}</td><tdstyle=\"width:50%;\">{newnm1Status}</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion2</td><tdstyle=\"width:25%;\">{newnm2}</td><tdstyle=\"width:50%;\">{newnm2Status}</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion3</td><tdstyle=\"width:25%;\">{newnm3}</td><tdstyle=\"width:50%;\">{newnm3Status}</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion4</td><tdstyle=\"width:25%;\">{newnm4}</td><tdstyle=\"width:50%;\">{newnm4Status}</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion5</td><tdstyle=\"width:25%;\">{newnm5}</td><tdstyle=\"width:50%;\">{newnm5Status}</td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:25%;\"> </td><tdstyle=\"width:25%;\">Location/Description</td><tdstyle=\"width:50%;\">Status</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion1</td><tdstyle=\"width:25%;\">{newnm1}</td><tdstyle=\"width:50%;\">{newnm1Status}</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion2</td><tdstyle=\"width:25%;\">{newnm2}</td><tdstyle=\"width:50%;\">{newnm2Status}</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion3</td><tdstyle=\"width:25%;\">{newnm3}</td><tdstyle=\"width:50%;\">{newnm3Status}</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion4</td><tdstyle=\"width:25%;\">{newnm4}</td><tdstyle=\"width:50%;\">{newnm4Status}</td></tr><tr><tdstyle=\"width:25%;\">NewNon-MeasurableLesion5</td><tdstyle=\"width:25%;\">{newnm5}</td><tdstyle=\"width:50%;\">{newnm5Status}</td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -4148,23 +4131,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:28.4079%;\"> </td><tdstyle=\"width:22.2886%;\">Location/Description</td><tdstyle=\"width:49.3034%;\">Status</td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion1</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt1}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt1] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt1Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion2</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt2}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt2] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt2Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion3</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt3}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt3] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt3Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion4</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt4}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt4] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt4Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion5</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt5}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt5] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt5Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion6</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt6}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt6] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt6Status}</p><p> </p></td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:28.4079%;\"> </td><tdstyle=\"width:22.2886%;\">Location/Description</td><tdstyle=\"width:49.3034%;\">Status</td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion1</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt1}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt1] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt1Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion2</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt2}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt2] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt2Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion3</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt3}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt3] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt3Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion4</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt4}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt4] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt4Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion5</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt5}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt5] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt5Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion6</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt6}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][nt6] </span></p></td><tdstyle=\"width:49.3034%;\"><p>{nt6Status}</p><p> </p></td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:Non-TargetLesionsmeasured?",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -4194,7 +4160,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Non-Target Lesion 1\n\nScreen Non-Target Lesion 1: [screen_arm_1][nt1]",
+            "sms:displayName": " [screen_arm_1][nt1]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -4228,7 +4194,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Non-Target Lesion 2\n\nScreen Non-Target Lesion 2: [screen_arm_1][nt2]",
+            "sms:displayName": " [screen_arm_1][nt2]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -4262,7 +4228,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Non-Target Lesion 3\n\nScreen Non-Target Lesion 3: [screen_arm_1][nt3]",
+            "sms:displayName": " [screen_arm_1][nt3]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -4296,7 +4262,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Non-Target Lesion 4\n\nScreen Non-Target Lesion 4: [screen_arm_1][nt4]",
+            "sms:displayName": " [screen_arm_1][nt4]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -4330,7 +4296,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Non-Target Lesion 5\n\nScreen Non-Target Lesion 5: [screen_arm_1][nt5]",
+            "sms:displayName": " [screen_arm_1][nt5]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -4890,7 +4856,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "REMINDER:  \n        - Maximum 2 Target Lesions per organ at baseline read\n        - Maximum 5 Target Lesions total at baseline read\n        - Longest diameter should be measured for    non-nodal lesions\n        - Shortest diameter should be measured for lymph nodes\n\n---",
+            "sms:displayName": "  \n        - Maximum 2 Target Lesions per organ at baseline read\n        - Maximum 5 Target Lesions total at baseline read\n        - Longest diameter should be measured for    non-nodal lesions\n        - Shortest diameter should be measured for lymph nodes\n\n---",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -4942,23 +4908,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Date Research Blood Drawn",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"><tbody><tr><tdstyle=\"width:20%;\">RECISTSumofLongestDiameters</td><tdstyle=\"width:20%;\">RECIST%ChangefromBaseline</td><tdstyle=\"width:20%;\">RECISTOverallResponse</td><tdstyle=\"width:20%;\">RECISTTargetLesionResponse</td><tdstyle=\"width:20%;\">RECISTNon-TargetlesionResponse</td></tr><tr><tdstyle=\"width:20%;\">{sldRecist}</td><tdstyle=\"width:20%;\">{recistChange}</td><tdstyle=\"width:20%;\">{recistresp}</td><tdstyle=\"width:20%;\">{recistTlresp}</td><tdstyle=\"width:20%;\">{recistNtresp}</td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"><tbody><tr><tdstyle=\"width:20%;\">RECISTSumofLongestDiameters</td><tdstyle=\"width:20%;\">RECIST%ChangefromBaseline</td><tdstyle=\"width:20%;\">RECISTOverallResponse</td><tdstyle=\"width:20%;\">RECISTTargetLesionResponse</td><tdstyle=\"width:20%;\">RECISTNon-TargetlesionResponse</td></tr><tr><tdstyle=\"width:20%;\">{sldRecist}</td><tdstyle=\"width:20%;\">{recistChange}</td><tdstyle=\"width:20%;\">{recistresp}</td><tdstyle=\"width:20%;\">{recistTlresp}</td><tdstyle=\"width:20%;\">{recistNtresp}</td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -5431,7 +5380,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Target Lesion 1\n\nScreen Target Lesion 1: [screen_arm_1][tl1]",
+            "sms:displayName": " [screen_arm_1][tl1]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -5467,7 +5416,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Target Lesion 2\n\nScreen Target Lesion 2: [screen_arm_1][tl2]",
+            "sms:displayName": " [screen_arm_1][tl2]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -5503,7 +5452,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Target Lesion 3\n\nScreen Target Lesion 3: [screen_arm_1][tl3]",
+            "sms:displayName": " [screen_arm_1][tl3]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -5539,7 +5488,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Target Lesion 4\n\nScreen Target Lesion 4: [screen_arm_1][tl4]",
+            "sms:displayName": " [screen_arm_1][tl4]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -5575,7 +5524,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Target Lesion 5\n\nScreen Target Lesion 5: [screen_arm_1][tl5]",
+            "sms:displayName": " [screen_arm_1][tl5]",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -5720,40 +5669,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Has subject had tumor genomic testing?",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"><tbody><tr><tdstyle=\"width:33.3333%;\">Didsubjecthavethefollowingtestingdone?</td><tdstyle=\"width:33.3333%;\">Ifyes,completethecorrespondingCRF</td><tdstyle=\"width:33.3333%;\">Companyperformingtesting</td></tr><tr><tdstyle=\"width:33.3333%;\"> </td><tdstyle=\"width:33.3333%;\"> </td><tdstyle=\"width:33.3333%;\"> </td></tr><tr><tdstyle=\"width:33.3333%;\">GermlineTesting(normaltissue,blood)</td><tdstyle=\"width:33.3333%;\">{germTest}</td><tdstyle=\"width:33.3333%;\">{germComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">TumorGenomicTesting</td><tdstyle=\"width:33.3333%;\">{tumorTest}</td><tdstyle=\"width:33.3333%;\">{tumorComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">TumorBiomarkerTesting(e.g.IHCforproteinexpression)</td><tdstyle=\"width:33.3333%;\">{biomark}</td><tdstyle=\"width:33.3333%;\">{bioComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">RNASequenceTesting(testingTumorRNA)</td><tdstyle=\"width:33.3333%;\">{rna}</td><tdstyle=\"width:33.3333%;\">{rnaComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">MSITesting</td><tdstyle=\"width:33.3333%;\">{msi}</td><tdstyle=\"width:33.3333%;\">{msiComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">TMB</td><tdstyle=\"width:33.3333%;\">{tmb}</td><tdstyle=\"width:33.3333%;\">{tmbComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">ctDNATesting(blood)</td><tdstyle=\"width:33.3333%;\">{ctdna}</td><tdstyle=\"width:33.3333%;\">{ctdnaComp}</td></tr></tbody></table><p> </p></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"><tbody><tr><tdstyle=\"width:33.3333%;\">Didsubjecthavethefollowingtestingdone?</td><tdstyle=\"width:33.3333%;\">Ifyes,completethecorrespondingCRF</td><tdstyle=\"width:33.3333%;\">Companyperformingtesting</td></tr><tr><tdstyle=\"width:33.3333%;\"> </td><tdstyle=\"width:33.3333%;\"> </td><tdstyle=\"width:33.3333%;\"> </td></tr><tr><tdstyle=\"width:33.3333%;\">GermlineTesting(normaltissue,blood)</td><tdstyle=\"width:33.3333%;\">{germTest}</td><tdstyle=\"width:33.3333%;\">{germComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">TumorGenomicTesting</td><tdstyle=\"width:33.3333%;\">{tumorTest}</td><tdstyle=\"width:33.3333%;\">{tumorComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">TumorBiomarkerTesting(e.g.IHCforproteinexpression)</td><tdstyle=\"width:33.3333%;\">{biomark}</td><tdstyle=\"width:33.3333%;\">{bioComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">RNASequenceTesting(testingTumorRNA)</td><tdstyle=\"width:33.3333%;\">{rna}</td><tdstyle=\"width:33.3333%;\">{rnaComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">MSITesting</td><tdstyle=\"width:33.3333%;\">{msi}</td><tdstyle=\"width:33.3333%;\">{msiComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">TMB</td><tdstyle=\"width:33.3333%;\">{tmb}</td><tdstyle=\"width:33.3333%;\">{tmbComp}</td></tr><tr><tdstyle=\"width:33.3333%;\">ctDNATesting(blood)</td><tdstyle=\"width:33.3333%;\">{ctdna}</td><tdstyle=\"width:33.3333%;\">{ctdnaComp}</td></tr></tbody></table><p> </p></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:CancerHistory"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:95.8731%;height:119px;\"border=\"1\"><tbody><trstyle=\"height:20px;\"><tdstyle=\"width:25%;text-align:center;height:20px;\"> </td><tdstyle=\"width:57.5792%;text-align:center;height:20px;\">Location/Description</td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\">Size(mm)</td></tr><trstyle=\"height:19px;\"><tdstyle=\"width:25%;height:19px;\"><p>TargetLesion1</p><p> <spanstyle=\"font-weight:normal;\"> </span></p></td><tdstyle=\"width:57.5792%;height:19px;\"><p>{tl1}<spanstyle=\"font-weight:normal;\"></span></p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl1] </span></p></td><tdstyle=\"width:16.2631%;height:19px;text-align:left;\"><p>{tl1size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion2 </p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl2}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl2] </span></p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl2size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion3</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl3}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl3]</span></p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl3size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion4 </p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl4}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl4]</span></p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl4size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion5 </p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl5}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl5]</span></p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl5size}</p><p> </p></td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:95.8731%;height:119px;\"border=\"1\"><tbody><trstyle=\"height:20px;\"><tdstyle=\"width:25%;text-align:center;height:20px;\"> </td><tdstyle=\"width:57.5792%;text-align:center;height:20px;\">Location/Description</td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\">Size(mm)</td></tr><trstyle=\"height:19px;\"><tdstyle=\"width:25%;height:19px;\"><p>TargetLesion1</p><p> <spanstyle=\"font-weight:normal;\"> </span></p></td><tdstyle=\"width:57.5792%;height:19px;\"><p>{tl1}<spanstyle=\"font-weight:normal;\"></span></p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl1] </span></p></td><tdstyle=\"width:16.2631%;height:19px;text-align:left;\"><p>{tl1size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion2 </p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl2}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl2] </span></p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl2size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion3</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl3}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl3]</span></p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl3size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion4 </p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl4}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl4]</span></p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl4size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion5 </p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl5}</p><p><spanstyle=\"font-weight:normal;\">[screenArm1][tl5]</span></p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl5size}</p><p> </p></td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -5998,23 +5913,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100.029%;height:344.533px;\"border=\"1\"><tbody><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:85px;\"> </td><tdstyle=\"width:16.3763%;text-align:center;height:85px;\">LabValue(enter9999ifnotdone)</td><tdstyle=\"width:14.0368%;text-align:center;height:85px;\">Units</td><tdstyle=\"width:16.23%;text-align:center;height:85px;\">AbnormalorClinicallySignificant?</td><tdstyle=\"width:17.9846%;text-align:center;height:85px;\">Doneatoutsidelab?</td><tdstyle=\"width:19.8855%;text-align:center;height:85px;\">ReferenceRange(ifdoneoutside)</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Sodium</td><tdstyle=\"width:16.3763%;height:20px;\">{sodium}</td><tdstyle=\"width:14.0368%;height:20px;\">mEq/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Potassium</td><tdstyle=\"width:16.3763%;height:20px;\">{potassium}</td><tdstyle=\"width:14.0368%;height:20px;\">mEq/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Chloride</td><tdstyle=\"width:16.3763%;height:20px;\">{chloride}</td><tdstyle=\"width:14.0368%;height:20px;\">mEq/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">CO2</td><tdstyle=\"width:16.3763%;height:20px;\">{co2}</td><tdstyle=\"width:14.0368%;height:20px;\">mEq/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Glucose</td><tdstyle=\"width:16.3763%;height:20px;\">{glucose}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">BUN</td><tdstyle=\"width:16.3763%;height:20px;\">{bun}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><tr><tdstyle=\"width:15.499%;\">CalculatedCreatinineClearance</td><tdstyle=\"width:16.3763%;\">{creatClear}</td><tdstyle=\"width:14.0368%;\">mL/min</td><tdstyle=\"width:16.23%;text-align:center;\"> </td><tdstyle=\"width:17.9846%;text-align:center;\"> </td><tdstyle=\"width:19.8855%;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Creatinine</td><tdstyle=\"width:16.3763%;height:20px;\">{creatinine}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{creatAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{creatOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{creatRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Calcium</td><tdstyle=\"width:16.3763%;height:20px;\">{calcium}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><tr><tdstyle=\"width:15.499%;height:20px;\">TotalProtein</td><tdstyle=\"width:16.3763%;height:20px;\">{totalProtein}</td><tdstyle=\"width:14.0368%;height:20px;\">g/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Albumin</td><tdstyle=\"width:16.3763%;height:20px;\">{albumin}</td><tdstyle=\"width:14.0368%;height:20px;\">g/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">AlkPhos</td><tdstyle=\"width:16.3763%;height:20px;\">{alkphos}</td><tdstyle=\"width:14.0368%;height:20px;\">U/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{alkphosAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{alkphosOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{alkphosRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">AST</td><tdstyle=\"width:16.3763%;height:20px;\">{ast}</td><tdstyle=\"width:14.0368%;height:20px;\">U/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{astAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{astOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{astRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">ALT</td><tdstyle=\"width:16.3763%;height:20px;\">{alt}</td><tdstyle=\"width:14.0368%;height:20px;\">U/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{altAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{altOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{altRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">TotalBilirubin</td><tdstyle=\"width:16.3763%;height:20px;\">{tBili}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{tbiliAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{tbiliOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{tbiliRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:38.2px;\">DirectBilirubin</td><tdstyle=\"width:16.3763%;height:38.2px;\">{dirBili}</td><tdstyle=\"width:14.0368%;height:38.2px;\">mg/dL</td><tdstyle=\"width:16.23%;height:38.2px;\"><pstyle=\"text-align:center;\">{dirbiliAbn}</p></td><tdstyle=\"width:17.9846%;height:38.2px;text-align:center;\">{dirbiliOutlab}</td><tdstyle=\"width:19.8855%;height:38.2px;text-align:center;\">{dirbiliRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:38.2px;\">Amylase</td><tdstyle=\"width:16.3763%;height:38.2px;\">{amylase}</td><tdstyle=\"width:14.0368%;height:38.2px;\">IU/L</td><tdstyle=\"width:16.23%;height:38.2px;\"><pstyle=\"text-align:center;\">{amylaseAbn}</p></td><tdstyle=\"width:17.9846%;height:38.2px;text-align:center;\">{amylaseOutlab}</td><tdstyle=\"width:19.8855%;height:38.2px;text-align:center;\">{amylaseRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:18.1333px;\">Phosphate</td><tdstyle=\"width:16.3763%;height:18.1333px;\">{phosphate}</td><tdstyle=\"width:14.0368%;height:18.1333px;\">mg/dL</td><tdstyle=\"width:16.23%;height:18.1333px;\"> </td><tdstyle=\"width:17.9846%;height:18.1333px;\"> </td><tdstyle=\"width:19.8855%;height:18.1333px;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:18.1333px;\">Magnesium</td><tdstyle=\"width:16.3763%;height:18.1333px;\">{magnesium}</td><tdstyle=\"width:14.0368%;height:18.1333px;\">mg/dL</td><tdstyle=\"width:16.23%;height:18.1333px;\"> </td><tdstyle=\"width:17.9846%;height:18.1333px;\"> </td><tdstyle=\"width:19.8855%;height:18.1333px;\"> </td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100.029%;height:344.533px;\"border=\"1\"><tbody><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:85px;\"> </td><tdstyle=\"width:16.3763%;text-align:center;height:85px;\">LabValue(enter9999ifnotdone)</td><tdstyle=\"width:14.0368%;text-align:center;height:85px;\">Units</td><tdstyle=\"width:16.23%;text-align:center;height:85px;\">AbnormalorClinicallySignificant?</td><tdstyle=\"width:17.9846%;text-align:center;height:85px;\">Doneatoutsidelab?</td><tdstyle=\"width:19.8855%;text-align:center;height:85px;\">ReferenceRange(ifdoneoutside)</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Sodium</td><tdstyle=\"width:16.3763%;height:20px;\">{sodium}</td><tdstyle=\"width:14.0368%;height:20px;\">mEq/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Potassium</td><tdstyle=\"width:16.3763%;height:20px;\">{potassium}</td><tdstyle=\"width:14.0368%;height:20px;\">mEq/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Chloride</td><tdstyle=\"width:16.3763%;height:20px;\">{chloride}</td><tdstyle=\"width:14.0368%;height:20px;\">mEq/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">CO2</td><tdstyle=\"width:16.3763%;height:20px;\">{co2}</td><tdstyle=\"width:14.0368%;height:20px;\">mEq/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Glucose</td><tdstyle=\"width:16.3763%;height:20px;\">{glucose}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">BUN</td><tdstyle=\"width:16.3763%;height:20px;\">{bun}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><tr><tdstyle=\"width:15.499%;\">CalculatedCreatinineClearance</td><tdstyle=\"width:16.3763%;\">{creatClear}</td><tdstyle=\"width:14.0368%;\">mL/min</td><tdstyle=\"width:16.23%;text-align:center;\"> </td><tdstyle=\"width:17.9846%;text-align:center;\"> </td><tdstyle=\"width:19.8855%;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Creatinine</td><tdstyle=\"width:16.3763%;height:20px;\">{creatinine}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{creatAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{creatOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{creatRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Calcium</td><tdstyle=\"width:16.3763%;height:20px;\">{calcium}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><tr><tdstyle=\"width:15.499%;height:20px;\">TotalProtein</td><tdstyle=\"width:16.3763%;height:20px;\">{totalProtein}</td><tdstyle=\"width:14.0368%;height:20px;\">g/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">Albumin</td><tdstyle=\"width:16.3763%;height:20px;\">{albumin}</td><tdstyle=\"width:14.0368%;height:20px;\">g/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\"> </td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\"> </td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">AlkPhos</td><tdstyle=\"width:16.3763%;height:20px;\">{alkphos}</td><tdstyle=\"width:14.0368%;height:20px;\">U/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{alkphosAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{alkphosOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{alkphosRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">AST</td><tdstyle=\"width:16.3763%;height:20px;\">{ast}</td><tdstyle=\"width:14.0368%;height:20px;\">U/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{astAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{astOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{astRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">ALT</td><tdstyle=\"width:16.3763%;height:20px;\">{alt}</td><tdstyle=\"width:14.0368%;height:20px;\">U/L</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{altAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{altOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{altRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:20px;\">TotalBilirubin</td><tdstyle=\"width:16.3763%;height:20px;\">{tBili}</td><tdstyle=\"width:14.0368%;height:20px;\">mg/dL</td><tdstyle=\"width:16.23%;height:20px;text-align:center;\">{tbiliAbn}</td><tdstyle=\"width:17.9846%;height:20px;text-align:center;\">{tbiliOutlab}</td><tdstyle=\"width:19.8855%;height:20px;text-align:center;\">{tbiliRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:38.2px;\">DirectBilirubin</td><tdstyle=\"width:16.3763%;height:38.2px;\">{dirBili}</td><tdstyle=\"width:14.0368%;height:38.2px;\">mg/dL</td><tdstyle=\"width:16.23%;height:38.2px;\"><pstyle=\"text-align:center;\">{dirbiliAbn}</p></td><tdstyle=\"width:17.9846%;height:38.2px;text-align:center;\">{dirbiliOutlab}</td><tdstyle=\"width:19.8855%;height:38.2px;text-align:center;\">{dirbiliRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:38.2px;\">Amylase</td><tdstyle=\"width:16.3763%;height:38.2px;\">{amylase}</td><tdstyle=\"width:14.0368%;height:38.2px;\">IU/L</td><tdstyle=\"width:16.23%;height:38.2px;\"><pstyle=\"text-align:center;\">{amylaseAbn}</p></td><tdstyle=\"width:17.9846%;height:38.2px;text-align:center;\">{amylaseOutlab}</td><tdstyle=\"width:19.8855%;height:38.2px;text-align:center;\">{amylaseRefrange}</td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:18.1333px;\">Phosphate</td><tdstyle=\"width:16.3763%;height:18.1333px;\">{phosphate}</td><tdstyle=\"width:14.0368%;height:18.1333px;\">mg/dL</td><tdstyle=\"width:16.23%;height:18.1333px;\"> </td><tdstyle=\"width:17.9846%;height:18.1333px;\"> </td><tdstyle=\"width:19.8855%;height:18.1333px;\"> </td></tr><trstyle=\"height:18.1333px;\"><tdstyle=\"width:15.499%;height:18.1333px;\">Magnesium</td><tdstyle=\"width:16.3763%;height:18.1333px;\">{magnesium}</td><tdstyle=\"width:14.0368%;height:18.1333px;\">mg/dL</td><tdstyle=\"width:16.23%;height:18.1333px;\"> </td><tdstyle=\"width:17.9846%;height:18.1333px;\"> </td><tdstyle=\"width:19.8855%;height:18.1333px;\"> </td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Chemistry"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:Isthesubjectdeceased?",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -6045,125 +5943,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Specify Location if \"Other\"",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;height:471.4px;\"border=\"1\"><tbody><trstyle=\"height:45px;\"><tdstyle=\"width:33.2001%;height:45px;\"> </td><tdstyle=\"width:33.3463%;height:45px;\">LabValue<spanstyle=\"font-weight:normal;\">(enter9999ifnotdone)</span></td><tdstyle=\"width:33.3463%;height:45px;\">Units</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">WBC</td><tdstyle=\"width:33.3463%;height:20px;\">{wbc}</td><tdstyle=\"width:33.3463%;height:20px;\">k/cumm</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">RBC</td><tdstyle=\"width:33.3463%;height:20px;\">{rbc}</td><tdstyle=\"width:33.3463%;height:20px;\">k/cumm</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">Hemoglobin</td><tdstyle=\"width:33.3463%;height:20px;\">{hgb}</td><tdstyle=\"width:33.3463%;height:20px;\">g/dL</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">Hematocrit</td><tdstyle=\"width:33.3463%;height:20px;\">{hct}</td><tdstyle=\"width:33.3463%;height:20px;\">%</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">PlateletCount</td><tdstyle=\"width:33.3463%;height:20px;\">{platelets}</td><tdstyle=\"width:33.3463%;height:20px;\">k/cumm</td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteNeutrophilCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{anc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm<spanstyle=\"font-weight:normal;\">(calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteLymphocyteCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{alc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm(<spanstyle=\"font-weight:normal;\">calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteMonocyteCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{amc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm(<spanstyle=\"font-weight:normal;\">calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteEosinophilCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{aec}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm<spanstyle=\"font-weight:normal;\">(calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteImmatureGranulocyteCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{aigc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm<spanstyle=\"font-weight:normal;\">(calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteBasophilCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{abc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm<spanstyle=\"font-weight:normal;\">(calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr></tbody></table><p> </p></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;height:471.4px;\"border=\"1\"><tbody><trstyle=\"height:45px;\"><tdstyle=\"width:33.2001%;height:45px;\"> </td><tdstyle=\"width:33.3463%;height:45px;\">LabValue<spanstyle=\"font-weight:normal;\">(enter9999ifnotdone)</span></td><tdstyle=\"width:33.3463%;height:45px;\">Units</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">WBC</td><tdstyle=\"width:33.3463%;height:20px;\">{wbc}</td><tdstyle=\"width:33.3463%;height:20px;\">k/cumm</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">RBC</td><tdstyle=\"width:33.3463%;height:20px;\">{rbc}</td><tdstyle=\"width:33.3463%;height:20px;\">k/cumm</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">Hemoglobin</td><tdstyle=\"width:33.3463%;height:20px;\">{hgb}</td><tdstyle=\"width:33.3463%;height:20px;\">g/dL</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">Hematocrit</td><tdstyle=\"width:33.3463%;height:20px;\">{hct}</td><tdstyle=\"width:33.3463%;height:20px;\">%</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.2001%;height:20px;\">PlateletCount</td><tdstyle=\"width:33.3463%;height:20px;\">{platelets}</td><tdstyle=\"width:33.3463%;height:20px;\">k/cumm</td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteNeutrophilCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{anc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm<spanstyle=\"font-weight:normal;\">(calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteLymphocyteCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{alc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm(<spanstyle=\"font-weight:normal;\">calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteMonocyteCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{amc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm(<spanstyle=\"font-weight:normal;\">calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteEosinophilCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{aec}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm<spanstyle=\"font-weight:normal;\">(calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteImmatureGranulocyteCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{aigc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm<spanstyle=\"font-weight:normal;\">(calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr><trstyle=\"height:54.4px;\"><tdstyle=\"width:33.2001%;height:54.4px;\">AbsoluteBasophilCount</td><tdstyle=\"width:33.3463%;height:54.4px;\">{abc}</td><tdstyle=\"width:33.3463%;height:54.4px;\">k/cumm<spanstyle=\"font-weight:normal;\">(calculateusing%andWBCcountifnotdone,orenter\"9999\"ifno%)</span></td></tr></tbody></table><p> </p></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Hematology"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"><tbody><tr><tdstyle=\"width:33.2798%;\">IRECISTNewLesionTargetSum</td><tdstyle=\"width:33.2798%;\">IRECIST%Change </td><tdstyle=\"width:33.2798%;\">iRECISTResponse</td></tr><tr><tdstyle=\"width:33.2798%;\">{sumIrecist}</td><tdstyle=\"width:33.2798%;\">{irecistChange}</td><tdstyle=\"width:33.2798%;\">{irecistResponse}</td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"><tbody><tr><tdstyle=\"width:33.2798%;\">IRECISTNewLesionTargetSum</td><tdstyle=\"width:33.2798%;\">IRECIST%Change </td><tdstyle=\"width:33.2798%;\">iRECISTResponse</td></tr><tr><tdstyle=\"width:33.2798%;\">{sumIrecist}</td><tdstyle=\"width:33.2798%;\">{irecistChange}</td><tdstyle=\"width:33.2798%;\">{irecistResponse}</td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;height:346px;\"border=\"1\"><tbody><trstyle=\"height:21px;\"><tdstyle=\"width:25%;height:21px;\"> </td><tdstyle=\"width:22.4626%;height:21px;\">Location/Description</td><tdstyle=\"width:52.5374%;height:21px;\">Status</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion1</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm1}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm1Status}</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion2</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm2}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm2Status}</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion3</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm3}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm3Status}</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion4</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm4}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm4Status}</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion5</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm5}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm5Status}</td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;height:346px;\"border=\"1\"><tbody><trstyle=\"height:21px;\"><tdstyle=\"width:25%;height:21px;\"> </td><tdstyle=\"width:22.4626%;height:21px;\">Location/Description</td><tdstyle=\"width:52.5374%;height:21px;\">Status</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion1</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm1}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm1Status}</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion2</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm2}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm2Status}</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion3</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm3}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm3Status}</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion4</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm4}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm4Status}</td></tr><trstyle=\"height:65px;\"><tdstyle=\"width:25%;height:65px;\">NewNon-MeasurableLesion5</td><tdstyle=\"width:22.4626%;height:65px;\">{newnm5}</td><tdstyle=\"width:52.5374%;height:65px;\">{newnm5Status}</td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:28.4079%;\"> </td><tdstyle=\"width:22.2886%;\">Location/Description</td><tdstyle=\"width:49.3034%;\">Status</td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion1</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt1}</p><p>[screenArm1][nt1] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt1Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion2</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt2}</p><p>[screenArm1][nt2] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt2Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion3</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt3}</p><p>[screenArm1][nt3] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt3Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion4</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt4}</p><p>[screenArm1][nt4] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt4Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion5</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt5}</p><p>[screenArm1][nt5] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt5Status}</p><p> </p></td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;\"border=\"1\"><tbody><tr><tdstyle=\"width:28.4079%;\"> </td><tdstyle=\"width:22.2886%;\">Location/Description</td><tdstyle=\"width:49.3034%;\">Status</td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion1</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt1}</p><p>[screenArm1][nt1] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt1Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion2</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt2}</p><p>[screenArm1][nt2] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt2Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion3</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt3}</p><p>[screenArm1][nt3] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt3Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion4</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt4}</p><p>[screenArm1][nt4] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt4Status}</p><p> </p></td></tr><tr><tdstyle=\"width:28.4079%;\"><p>Non-TargetLesion5</p><p> </p></td><tdstyle=\"width:22.2886%;\"><p>{nt5}</p><p>[screenArm1][nt5] </p></td><tdstyle=\"width:49.3034%;\"><p>{nt5Status}</p><p> </p></td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Consent",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Consent",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "consent",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;height:188px;\"border=\"1\"><tbody><trstyle=\"height:42px;\"><tdstyle=\"width:33.3333%;height:42px;\">Didsubjecthavethefollowingtestingdone?</td><tdstyle=\"width:33.3333%;height:42px;\">Ifyes,completethecorrespondingCRF</td><tdstyle=\"width:33.3333%;height:42px;\">Companyperformingtest</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">GermlineTesting<spanstyle=\"font-weight:normal;\">(normaltissue,blood)</span></td><tdstyle=\"width:33.3333%;height:20px;\">{germTest}</td><tdstyle=\"width:33.3333%;height:20px;\">{germComp}</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">TumorGenomicTesting</td><tdstyle=\"width:33.3333%;height:20px;\">{tumorTest}</td><tdstyle=\"width:33.3333%;height:20px;\">{tumorComp}</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">MSITesting</td><tdstyle=\"width:33.3333%;height:20px;\">{msi}</td><tdstyle=\"width:33.3333%;height:20px;\">{msiComp}</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">TumorBiomarkerTesting<spanstyle=\"font-weight:normal;\">(e.g.IHCforproteinexpression)</span></td><tdstyle=\"width:33.3333%;height:20px;\">{biomark}</td><tdstyle=\"width:33.3333%;height:20px;\">{bioComp}</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">ctDNA<spanstyle=\"font-weight:normal;\">(blood)</span></td><tdstyle=\"width:33.3333%;height:20px;\">{ctdna}</td><tdstyle=\"width:33.3333%;height:20px;\">{ctdnaComp}</td></tr><trstyle=\"height:36px;\"><tdstyle=\"width:33.3333%;height:36px;\">RNASequenceTesting<spanstyle=\"font-weight:normal;\">(testingTumorRNA)</span></td><tdstyle=\"width:33.3333%;height:36px;\">{rna}</td><tdstyle=\"width:33.3333%;height:36px;\">{rnaComp}</td></tr></tbody></table><p></p></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:100%;height:188px;\"border=\"1\"><tbody><trstyle=\"height:42px;\"><tdstyle=\"width:33.3333%;height:42px;\">Didsubjecthavethefollowingtestingdone?</td><tdstyle=\"width:33.3333%;height:42px;\">Ifyes,completethecorrespondingCRF</td><tdstyle=\"width:33.3333%;height:42px;\">Companyperformingtest</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">GermlineTesting<spanstyle=\"font-weight:normal;\">(normaltissue,blood)</span></td><tdstyle=\"width:33.3333%;height:20px;\">{germTest}</td><tdstyle=\"width:33.3333%;height:20px;\">{germComp}</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">TumorGenomicTesting</td><tdstyle=\"width:33.3333%;height:20px;\">{tumorTest}</td><tdstyle=\"width:33.3333%;height:20px;\">{tumorComp}</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">MSITesting</td><tdstyle=\"width:33.3333%;height:20px;\">{msi}</td><tdstyle=\"width:33.3333%;height:20px;\">{msiComp}</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">TumorBiomarkerTesting<spanstyle=\"font-weight:normal;\">(e.g.IHCforproteinexpression)</span></td><tdstyle=\"width:33.3333%;height:20px;\">{biomark}</td><tdstyle=\"width:33.3333%;height:20px;\">{bioComp}</td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:33.3333%;height:20px;\">ctDNA<spanstyle=\"font-weight:normal;\">(blood)</span></td><tdstyle=\"width:33.3333%;height:20px;\">{ctdna}</td><tdstyle=\"width:33.3333%;height:20px;\">{ctdnaComp}</td></tr><trstyle=\"height:36px;\"><tdstyle=\"width:33.3333%;height:36px;\">RNASequenceTesting<spanstyle=\"font-weight:normal;\">(testingTumorRNA)</span></td><tdstyle=\"width:33.3333%;height:36px;\">{rna}</td><tdstyle=\"width:33.3333%;height:36px;\">{rnaComp}</td></tr></tbody></table><p></p></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:CancerHistory"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:95.8731%;height:119px;\"border=\"1\"><tbody><trstyle=\"height:20px;\"><tdstyle=\"width:25%;text-align:center;height:20px;\"> </td><tdstyle=\"width:57.5792%;text-align:center;height:20px;\">Location/Description</td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\">Size(mm)</td></tr><trstyle=\"height:19px;\"><tdstyle=\"width:25%;height:19px;\"><p>TargetLesion1</p><p> </p></td><tdstyle=\"width:57.5792%;height:19px;\"><p>{tl1}<spanstyle=\"font-weight:normal;\"></span></p><p>[screenArm1][tl1] </p></td><tdstyle=\"width:16.2631%;height:19px;text-align:left;\"><p>{tl1size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion2</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl2}</p><p>[screenArm1][tl2] </p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl2size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion3</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl3}</p><p>[screenArm1][tl3] </p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl3size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion4</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl4}</p><p>[screenArm1][tl4] </p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl4size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion5</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl5}</p><p>[screenArm1][tl5] </p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl5size}</p><p> </p></td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><tablestyle=\"border-collapse:collapse;width:95.8731%;height:119px;\"border=\"1\"><tbody><trstyle=\"height:20px;\"><tdstyle=\"width:25%;text-align:center;height:20px;\"> </td><tdstyle=\"width:57.5792%;text-align:center;height:20px;\">Location/Description</td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\">Size(mm)</td></tr><trstyle=\"height:19px;\"><tdstyle=\"width:25%;height:19px;\"><p>TargetLesion1</p><p> </p></td><tdstyle=\"width:57.5792%;height:19px;\"><p>{tl1}<spanstyle=\"font-weight:normal;\"></span></p><p>[screenArm1][tl1] </p></td><tdstyle=\"width:16.2631%;height:19px;text-align:left;\"><p>{tl1size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion2</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl2}</p><p>[screenArm1][tl2] </p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl2size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion3</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl3}</p><p>[screenArm1][tl3] </p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl3size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion4</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl4}</p><p>[screenArm1][tl4] </p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl4size}</p><p> </p></td></tr><trstyle=\"height:20px;\"><tdstyle=\"width:25%;height:20px;\"><p>TargetLesion5</p><p> </p></td><tdstyle=\"width:57.5792%;height:20px;\"><p>{tl5}</p><p>[screenArm1][tl5] </p></td><tdstyle=\"width:16.2631%;height:20px;text-align:left;\"><p>{tl5size}</p><p> </p></td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Recistirecist"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -6270,23 +6049,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><p>TumorStatus </p><tablestyle=\"border-collapse:collapse;width:95.5688%;height:76.6276px;\"border=\"0\"><tbody><trstyle=\"height:26.3021px;\"><tdstyle=\"height:26.3021px;width:56.4865%;\"colspan=\"2\">Tumorstatuscomparedtopriorimaging</td><tdstyle=\"height:26.3021px;width:43.4911%;\"colspan=\"2\">{tumorStatusPriorImaging}</td></tr><tr><tdcolspan=\"2\">Tumorsurveillancefindings</td><tdcolspan=\"2\">{tumorSurveillanceFindings}</td></tr><trstyle=\"height:23.3333px;\"><tdstyle=\"height:23.3333px;width:56.4865%;\"colspan=\"2\">Ifapplicable,locationoftumorprogression</td><tdstyle=\"width:43.4911%;height:23.3333px;\"colspan=\"2\">{locationTumorProgression}</td></tr><trstyle=\"height:26.9922px;\"><tdstyle=\"height:26.9922px;width:56.4865%;\"colspan=\"2\">Othernotesregardingtumorprogression</td><tdstyle=\"height:26.9922px;width:43.4911%;\"colspan=\"2\">{otherTumorProgression}</td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><p>TumorStatus </p><tablestyle=\"border-collapse:collapse;width:95.5688%;height:76.6276px;\"border=\"0\"><tbody><trstyle=\"height:26.3021px;\"><tdstyle=\"height:26.3021px;width:56.4865%;\"colspan=\"2\">Tumorstatuscomparedtopriorimaging</td><tdstyle=\"height:26.3021px;width:43.4911%;\"colspan=\"2\">{tumorStatusPriorImaging}</td></tr><tr><tdcolspan=\"2\">Tumorsurveillancefindings</td><tdcolspan=\"2\">{tumorSurveillanceFindings}</td></tr><trstyle=\"height:23.3333px;\"><tdstyle=\"height:23.3333px;width:56.4865%;\"colspan=\"2\">Ifapplicable,locationoftumorprogression</td><tdstyle=\"width:43.4911%;height:23.3333px;\"colspan=\"2\">{locationTumorProgression}</td></tr><trstyle=\"height:26.9922px;\"><tdstyle=\"height:26.9922px;width:56.4865%;\"colspan=\"2\">Othernotesregardingtumorprogression</td><tdstyle=\"height:26.9922px;width:43.4911%;\"colspan=\"2\">{otherTumorProgression}</td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ImgPmdc2"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:ImgPmdc2",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -6300,40 +6062,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "img_pmdc_2",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:<divclass=\"rich-text-field-label\"><p>Weight</p><tablestyle=\"border-collapse:collapse;width:93.0697%;height:34px;\"border=\"0\"><tbody><trstyle=\"height:17px;\"><tdstyle=\"width:7.2854%;height:17px;\">lbs</td><tdstyle=\"width:15.3705%;height:17px;\">{weightPmdc}</td><tdstyle=\"width:13.952%;height:17px;\">{weight2}</td><tdstyle=\"width:16.2216%;height:17px;\">{weight3}</td><tdstyle=\"width:14.5194%;height:17px;\">{weight4}</td><tdstyle=\"width:13.6683%;height:17px;\">{weight5}</td><tdstyle=\"width:15.6653%;height:17px;\">{weight6}</td></tr><trstyle=\"height:17px;\"><tdstyle=\"width:7.2854%;height:17px;\">Date</td><tdstyle=\"width:15.3705%;height:17px;\">{dateWeight1}</td><tdstyle=\"width:13.952%;height:17px;\">{dateWeight2}</td><tdstyle=\"width:16.2216%;height:17px;\">{dateWeight3}</td><tdstyle=\"width:14.5194%;height:17px;\">{dateWeight4}</td><tdstyle=\"width:13.6683%;height:17px;\">{dateWeight5}</td><tdstyle=\"width:15.6653%;height:17px;\">{dateWeight6}</td></tr></tbody></table></div>",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "<divclass=\"rich-text-field-label\"><p>Weight</p><tablestyle=\"border-collapse:collapse;width:93.0697%;height:34px;\"border=\"0\"><tbody><trstyle=\"height:17px;\"><tdstyle=\"width:7.2854%;height:17px;\">lbs</td><tdstyle=\"width:15.3705%;height:17px;\">{weightPmdc}</td><tdstyle=\"width:13.952%;height:17px;\">{weight2}</td><tdstyle=\"width:16.2216%;height:17px;\">{weight3}</td><tdstyle=\"width:14.5194%;height:17px;\">{weight4}</td><tdstyle=\"width:13.6683%;height:17px;\">{weight5}</td><tdstyle=\"width:15.6653%;height:17px;\">{weight6}</td></tr><trstyle=\"height:17px;\"><tdstyle=\"width:7.2854%;height:17px;\">Date</td><tdstyle=\"width:15.3705%;height:17px;\">{dateWeight1}</td><tdstyle=\"width:13.952%;height:17px;\">{dateWeight2}</td><tdstyle=\"width:16.2216%;height:17px;\">{dateWeight3}</td><tdstyle=\"width:14.5194%;height:17px;\">{dateWeight4}</td><tdstyle=\"width:13.6683%;height:17px;\">{dateWeight5}</td><tdstyle=\"width:15.6653%;height:17px;\">{dateWeight6}</td></tr></tbody></table></div>",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Pmdc"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": " collapse; width",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Pmdc",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Pmdc",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "pmdc",
             "sms:required": "sms:false",
             "sms:validationRules": []
         }
