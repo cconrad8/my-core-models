@@ -8,1319 +8,1217 @@
     },
     "@graph": [
         {
-            "@id": "bts:Active",
+            "@id": "Active",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Active",
+            "rdfs:label": "active",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 },
                 {
-                    "@id": "bts:ChallengeStatus"
+                    "@id": "ChallengeStatus"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "active",
             "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:validationRules": null
         },
         {
-            "@id": "bts:Thing",
+            "@id": "AvatarKey",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Thing",
+            "rdfs:label": "avatar_key",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "Thing",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeStatus",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeStatus",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Upcoming"
-                },
-                {
-                    "@id": "bts:Active"
-                },
-                {
-                    "@id": "bts:Completed"
-                }
-            ],
-            "sms:displayName": "challenge_status",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:AvatarKey",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "AvatarKey",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "avatar_key",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "str"
             ]
         },
         {
-            "@id": "bts:Benchmark",
+            "@id": "Benchmark",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Benchmark",
+            "rdfs:label": "benchmark",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:ChallengeCategoryName"
+                    "@id": "ChallengeCategoryName"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "benchmark",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:required": "sms:false"
         },
         {
-            "@id": "bts:ChallengeCategoryName",
+            "@id": "Challenge",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeCategoryName",
+            "rdfs:label": "challenge",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Featured"
-                },
-                {
-                    "@id": "bts:Benchmark"
-                },
-                {
-                    "@id": "bts:Hackathon"
-                }
-            ],
-            "sms:displayName": "challenge_category_name",
-            "sms:required": "sms:true",
-            "sms:validationRules": [
-                "str"
-            ]
-        },
-        {
-            "@id": "bts:Challenge",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Challenge",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge",
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:ChallengeId"
+                    "@id": "ChallengeId"
                 },
                 {
-                    "@id": "bts:ChallengeSlug"
+                    "@id": "ChallengeSlug"
                 },
                 {
-                    "@id": "bts:ChallengeName"
+                    "@id": "ChallengeName"
                 },
                 {
-                    "@id": "bts:ChallengeHeadline"
+                    "@id": "ChallengeHeadline"
                 },
                 {
-                    "@id": "bts:ChallengeDescription"
+                    "@id": "ChallengeDescription"
                 },
                 {
-                    "@id": "bts:ChallengeAvatarUrl"
+                    "@id": "ChallengeAvatarUrl"
                 },
                 {
-                    "@id": "bts:ChallengeWebsiteUrl"
+                    "@id": "ChallengeWebsiteUrl"
                 },
                 {
-                    "@id": "bts:ChallengeStatus"
+                    "@id": "ChallengeStatus"
                 },
                 {
-                    "@id": "bts:ChallengePlatformId"
+                    "@id": "ChallengePlatformId"
                 },
                 {
-                    "@id": "bts:ChallengeDoi"
+                    "@id": "ChallengeDoi"
                 },
                 {
-                    "@id": "bts:ChallengeCreatedAt"
+                    "@id": "ChallengeCreatedAt"
                 },
                 {
-                    "@id": "bts:ChallengeUpdatedAt"
+                    "@id": "ChallengeUpdatedAt"
                 },
                 {
-                    "@id": "bts:ChallengeIncentiveId"
+                    "@id": "ChallengeIncentiveId"
                 },
                 {
-                    "@id": "bts:ChallengeCategoryId"
+                    "@id": "ChallengeCategoryId"
                 },
                 {
-                    "@id": "bts:ChallengeInputDataTypeId"
+                    "@id": "ChallengeInputDataTypeId"
                 }
-            ],
-            "sms:validationRules": []
+            ]
         },
         {
-            "@id": "bts:ChallengeId",
+            "@id": "ChallengeAvatarUrl",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeId",
+            "rdfs:label": "challenge_avatar_url",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:required": "sms:false"
         },
         {
-            "@id": "bts:ChallengeSlug",
+            "@id": "ChallengeCategory",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeSlug",
+            "rdfs:label": "challenge_category",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_slug",
             "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "ChallengeCategoryId"
+                },
+                {
+                    "@id": "ChallengeCategoryName"
+                }
+            ]
+        },
+        {
+            "@id": "ChallengeCategoryId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_category_id",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "ChallengeCategoryName",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_category_name",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "Featured"
+                },
+                {
+                    "@id": "Benchmark"
+                },
+                {
+                    "@id": "Hackathon"
+                }
+            ],
+            "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
             ]
         },
         {
-            "@id": "bts:ChallengeName",
+            "@id": "ChallengeContribution",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeName",
+            "rdfs:label": "challenge_contribution",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_name",
             "sms:required": "sms:false",
-            "sms:validationRules": [
-                "str"
+            "sms:requiresDependency": [
+                {
+                    "@id": "ChallengeContributionId"
+                },
+                {
+                    "@id": "ChallengeContributionCreatedAt"
+                },
+                {
+                    "@id": "ChallengeContributionRole"
+                }
             ]
         },
         {
-            "@id": "bts:ChallengeHeadline",
+            "@id": "ChallengeContributionCreatedAt",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeHeadline",
+            "rdfs:label": "challenge_contribution_created_at",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_headline",
-            "sms:required": "sms:true",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeDescription",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeDescription",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_description",
-            "sms:required": "sms:true",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeAvatarUrl",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeAvatarUrl",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_avatar_url",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeWebsiteUrl",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeWebsiteUrl",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_website_url",
-            "sms:required": "sms:true",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengePlatformId",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengePlatformId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_platform_id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeDoi",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeDoi",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_doi",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeCreatedAt",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeCreatedAt",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_created_at",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "date"
             ]
         },
         {
-            "@id": "bts:ChallengeUpdatedAt",
+            "@id": "ChallengeContributionId",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeUpdatedAt",
+            "rdfs:label": "challenge_contribution_id",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_updated_at",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "date"
-            ]
+            "sms:required": "sms:false"
         },
         {
-            "@id": "bts:ChallengeIncentiveId",
+            "@id": "ChallengeContributionRole",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeIncentiveId",
+            "rdfs:label": "challenge_contribution_role",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_incentive_id",
+            "schema:rangeIncludes": [
+                {
+                    "@id": "ChallengeOrganizer"
+                },
+                {
+                    "@id": "DataContributor"
+                },
+                {
+                    "@id": "Sponsor"
+                }
+            ],
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "str"
             ]
         },
         {
-            "@id": "bts:ChallengeCategoryId",
+            "@id": "ChallengeCreatedAt",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeCategoryId",
+            "rdfs:label": "challenge_created_at",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_category_id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeInputDataTypeId",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeInputDataTypeId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_input_data_type_id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeCategory",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeCategory",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_category",
-            "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:ChallengeCategoryId"
-                },
-                {
-                    "@id": "bts:ChallengeCategoryName"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Featured",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Featured",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ChallengeCategoryName"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "featured",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Hackathon",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Hackathon",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ChallengeCategoryName"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "hackathon",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeContribution",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeContribution",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_contribution",
-            "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:ChallengeContributionId"
-                },
-                {
-                    "@id": "bts:ChallengeContributionCreatedAt"
-                },
-                {
-                    "@id": "bts:ChallengeContributionRole"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeContributionId",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeContributionId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_contribution_id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeContributionCreatedAt",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeContributionCreatedAt",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_contribution_created_at",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "date"
             ]
         },
         {
-            "@id": "bts:ChallengeContributionRole",
+            "@id": "ChallengeDescription",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeContributionRole",
+            "rdfs:label": "challenge_description",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "schema:rangeIncludes": [
+            "sms:required": "sms:true"
+        },
+        {
+            "@id": "ChallengeDoi",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_doi",
+            "rdfs:subClassOf": [
                 {
-                    "@id": "bts:ChallengeOrganizer"
-                },
-                {
-                    "@id": "bts:DataContributor"
-                },
-                {
-                    "@id": "bts:Sponsor"
+                    "@id": "Thing"
                 }
             ],
-            "sms:displayName": "challenge_contribution_role",
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "ChallengeHeadline",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_headline",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:true"
+        },
+        {
+            "@id": "ChallengeId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_id",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "ChallengeIncentive",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_incentive",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "ChallengeIncentiveId"
+                },
+                {
+                    "@id": "ChallengeIncentiveCreatedAt"
+                },
+                {
+                    "@id": "ChallengeIncentiveName"
+                }
+            ]
+        },
+        {
+            "@id": "ChallengeIncentiveCreatedAt",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_incentive_created_at",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "date"
+            ]
+        },
+        {
+            "@id": "ChallengeIncentiveId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_incentive_id",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "str"
             ]
         },
         {
-            "@id": "bts:ChallengeOrganizer",
+            "@id": "ChallengeIncentiveName",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeOrganizer",
+            "rdfs:label": "challenge_incentive_name",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:ChallengeContributionRole"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_organizer",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:DataContributor",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "DataContributor",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ChallengeContributionRole"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "data_contributor",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Sponsor",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Sponsor",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ChallengeContributionRole"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "sponsor",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeIncentive",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeIncentive",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_incentive",
-            "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:ChallengeIncentiveId"
-                },
-                {
-                    "@id": "bts:ChallengeIncentiveCreatedAt"
-                },
-                {
-                    "@id": "bts:ChallengeIncentiveName"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeIncentiveCreatedAt",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeIncentiveCreatedAt",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_incentive_created_at",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "date"
-            ]
-        },
-        {
-            "@id": "bts:ChallengeIncentiveName",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeIncentiveName",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:Monetary"
+                    "@id": "Monetary"
                 },
                 {
-                    "@id": "bts:Publication"
+                    "@id": "Publication"
                 },
                 {
-                    "@id": "bts:SpeakingEngagement"
+                    "@id": "SpeakingEngagement"
                 },
                 {
-                    "@id": "bts:Other"
+                    "@id": "Other"
                 }
             ],
-            "sms:displayName": "challenge_incentive_name",
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "list like"
             ]
         },
         {
-            "@id": "bts:Monetary",
+            "@id": "ChallengeInputDataType",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Monetary",
+            "rdfs:label": "challenge_input_data_type",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:ChallengeIncentiveName"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "monetary",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Publication",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Publication",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ChallengeIncentiveName"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "publication",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SpeakingEngagement",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SpeakingEngagement",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ChallengeIncentiveName"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "speaking_engagement",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Other",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Other",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ChallengeSubmissionTypeName"
-                },
-                {
-                    "@id": "bts:ChallengeIncentiveName"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "other",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeInputDataType",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeInputDataType",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_input_data_type",
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:ChallengeInputDataTypeId"
+                    "@id": "ChallengeInputDataTypeId"
                 },
                 {
-                    "@id": "bts:ChallengeInputDataTypeCreatedAt"
+                    "@id": "ChallengeInputDataTypeCreatedAt"
                 }
-            ],
-            "sms:validationRules": []
+            ]
         },
         {
-            "@id": "bts:ChallengeInputDataTypeCreatedAt",
+            "@id": "ChallengeInputDataTypeCreatedAt",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeInputDataTypeCreatedAt",
+            "rdfs:label": "challenge_input_data_type_created_at",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_input_data_type_created_at",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "ChallengeInputDataTypeId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_input_data_type_id",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "ChallengeName",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_name",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
             "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:validationRules": [
+                "str"
+            ]
         },
         {
-            "@id": "bts:ChallengePlatform",
+            "@id": "ChallengeOrganizer",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengePlatform",
+            "rdfs:label": "challenge_organizer",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "ChallengeContributionRole"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_platform",
+            "sms:required": "sms:false",
+            "sms:validationRules": null
+        },
+        {
+            "@id": "ChallengePlatform",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_platform",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:ChallengePlatformName"
+                    "@id": "ChallengePlatformName"
                 },
                 {
-                    "@id": "bts:ChallengePlatformId"
+                    "@id": "ChallengePlatformId"
                 },
                 {
-                    "@id": "bts:ChallengePlatformCreatedAt"
+                    "@id": "ChallengePlatformCreatedAt"
                 },
                 {
-                    "@id": "bts:ChallengePlatformUpdatedAt"
+                    "@id": "ChallengePlatformUpdatedAt"
                 },
                 {
-                    "@id": "bts:ChallengeSlug"
+                    "@id": "ChallengeSlug"
                 },
                 {
-                    "@id": "bts:AvatarKey"
+                    "@id": "AvatarKey"
                 },
                 {
-                    "@id": "bts:ChallengeId"
+                    "@id": "ChallengeId"
                 }
             ],
-            "sms:validationRules": []
+            "sms:validationRules": null
         },
         {
-            "@id": "bts:ChallengePlatformName",
+            "@id": "ChallengePlatformCreatedAt",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengePlatformName",
+            "rdfs:label": "challenge_platform_created_at",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_platform_name",
+            "sms:required": "sms:false",
+            "sms:validationRules": [
+                "date"
+            ]
+        },
+        {
+            "@id": "ChallengePlatformId",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_platform_id",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "ChallengePlatformName",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_platform_name",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
             "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
             ]
         },
         {
-            "@id": "bts:ChallengePlatformCreatedAt",
+            "@id": "ChallengePlatformUpdatedAt",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengePlatformCreatedAt",
+            "rdfs:label": "challenge_platform_updated_at",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_platform_created_at",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "date"
             ]
         },
         {
-            "@id": "bts:ChallengePlatformUpdatedAt",
+            "@id": "ChallengeSlug",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengePlatformUpdatedAt",
+            "rdfs:label": "challenge_slug",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_platform_updated_at",
-            "sms:required": "sms:false",
-            "sms:validationRules": [
-                "date"
-            ]
-        },
-        {
-            "@id": "bts:ChallengeStar",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeStar",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_star",
-            "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:ChallengeStarId"
-                },
-                {
-                    "@id": "bts:ChallengeStarUserId"
-                },
-                {
-                    "@id": "bts:ChallengeStarCreatedAt"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeStarId",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeStarId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_star_id",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "str"
             ]
         },
         {
-            "@id": "bts:ChallengeStarUserId",
+            "@id": "ChallengeStar",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeStarUserId",
+            "rdfs:label": "challenge_star",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_star_user_id",
             "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:requiresDependency": [
+                {
+                    "@id": "ChallengeStarId"
+                },
+                {
+                    "@id": "ChallengeStarUserId"
+                },
+                {
+                    "@id": "ChallengeStarCreatedAt"
+                }
+            ]
         },
         {
-            "@id": "bts:ChallengeStarCreatedAt",
+            "@id": "ChallengeStarCreatedAt",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeStarCreatedAt",
+            "rdfs:label": "challenge_star_created_at",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_star_created_at",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "date"
             ]
         },
         {
-            "@id": "bts:Upcoming",
+            "@id": "ChallengeStarId",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Upcoming",
+            "rdfs:label": "challenge_star_id",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
-                },
-                {
-                    "@id": "bts:ChallengeStatus"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "upcoming",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Completed",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Completed",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                },
-                {
-                    "@id": "bts:ChallengeStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "completed",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeSubmissionType",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeSubmissionType",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_submission_type",
-            "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:ChallengeSubmissionTypeId"
-                },
-                {
-                    "@id": "bts:ChallengeId"
-                },
-                {
-                    "@id": "bts:ChallengeSubmissionTypeName"
-                },
-                {
-                    "@id": "bts:ChallengeSubmissionTypeCreatedAt"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ChallengeSubmissionTypeId",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeSubmissionTypeId",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Thing"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "challenge_submission_type_id",
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "str"
             ]
         },
         {
-            "@id": "bts:ChallengeSubmissionTypeName",
+            "@id": "ChallengeStarUserId",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeSubmissionTypeName",
+            "rdfs:label": "challenge_star_user_id",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "ChallengeStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_status",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
             },
             "schema:rangeIncludes": [
                 {
-                    "@id": "bts:ContainerImage"
+                    "@id": "Upcoming"
                 },
                 {
-                    "@id": "bts:PredictionFile"
+                    "@id": "Active"
                 },
                 {
-                    "@id": "bts:Notebook"
-                },
-                {
-                    "@id": "bts:Mlcube"
-                },
-                {
-                    "@id": "bts:Other"
+                    "@id": "Completed"
                 }
             ],
-            "sms:displayName": "challenge_submission_type_name",
-            "sms:required": "sms:false",
+            "sms:required": "sms:true",
             "sms:validationRules": [
                 "str"
             ]
         },
         {
-            "@id": "bts:ChallengeSubmissionTypeCreatedAt",
+            "@id": "ChallengeSubmissionType",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ChallengeSubmissionTypeCreatedAt",
+            "rdfs:label": "challenge_submission_type",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "challenge_submission_type_created_at",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "ChallengeSubmissionTypeId"
+                },
+                {
+                    "@id": "ChallengeId"
+                },
+                {
+                    "@id": "ChallengeSubmissionTypeName"
+                },
+                {
+                    "@id": "ChallengeSubmissionTypeCreatedAt"
+                }
+            ],
+            "sms:validationRules": null
+        },
+        {
+            "@id": "ChallengeSubmissionTypeCreatedAt",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "challenge_submission_type_created_at",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
             "sms:required": "sms:false",
             "sms:validationRules": [
                 "date"
             ]
         },
         {
-            "@id": "bts:ContainerImage",
+            "@id": "ChallengeSubmissionTypeId",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "ContainerImage",
+            "rdfs:label": "challenge_submission_type_id",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:ChallengeSubmissionTypeName"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "container_image",
             "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:validationRules": [
+                "str"
+            ]
         },
         {
-            "@id": "bts:PredictionFile",
+            "@id": "ChallengeSubmissionTypeName",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "PredictionFile",
+            "rdfs:label": "challenge_submission_type_name",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:ChallengeSubmissionTypeName"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "prediction_file",
+            "schema:rangeIncludes": [
+                {
+                    "@id": "ContainerImage"
+                },
+                {
+                    "@id": "PredictionFile"
+                },
+                {
+                    "@id": "Notebook"
+                },
+                {
+                    "@id": "Mlcube"
+                },
+                {
+                    "@id": "Other"
+                }
+            ],
             "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:validationRules": [
+                "str"
+            ]
         },
         {
-            "@id": "bts:Notebook",
+            "@id": "ChallengeUpdatedAt",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Notebook",
+            "rdfs:label": "challenge_updated_at",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:ChallengeSubmissionTypeName"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "notebook",
             "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:validationRules": [
+                "date"
+            ]
         },
         {
-            "@id": "bts:Mlcube",
+            "@id": "ChallengeWebsiteUrl",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "Mlcube",
+            "rdfs:label": "challenge_website_url",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:ChallengeSubmissionTypeName"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "mlcube",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:required": "sms:true",
+            "sms:validationRules": null
         },
         {
-            "@id": "bts:EdamConcept",
+            "@id": "Completed",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "EdamConcept",
+            "rdfs:label": "completed",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "ChallengeStatus"
+                },
+                {
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "edam_concept",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "ContainerImage",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "container_image",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeSubmissionTypeName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "DataContributor",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "data_contributor",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeContributionRole"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "EdamConcept",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "edam_concept",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:displayName": "",
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:EdamConceptClassId"
+                    "@id": "EdamConceptClassId"
                 },
                 {
-                    "@id": "bts:EdamConceptId"
+                    "@id": "EdamConceptId"
                 },
                 {
-                    "@id": "bts:EdamConceptPreferredLabel"
+                    "@id": "EdamConceptPreferredLabel"
                 }
             ],
-            "sms:validationRules": []
+            "sms:validationRules": null
         },
         {
-            "@id": "bts:EdamConceptClassId",
+            "@id": "EdamConceptClassId",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "EdamConceptClassId",
+            "rdfs:label": "edam_concept_class_id",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "edam_concept_class_id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:required": "sms:false"
         },
         {
-            "@id": "bts:EdamConceptId",
+            "@id": "EdamConceptId",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "EdamConceptId",
+            "rdfs:label": "edam_concept_id",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "edam_concept_id",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:required": "sms:false"
         },
         {
-            "@id": "bts:EdamConceptPreferredLabel",
+            "@id": "EdamConceptPreferredLabel",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "EdamConceptPreferredLabel",
+            "rdfs:label": "edam_concept_preferred_label",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "Thing"
                 }
             ],
             "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
+                "@id": "http://openchallenges.io"
             },
-            "sms:displayName": "edam_concept_preferred_label",
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Featured",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "featured",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeCategoryName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Hackathon",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "hackathon",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeCategoryName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Mlcube",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "mlcube",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeSubmissionTypeName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Monetary",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "monetary",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeIncentiveName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Notebook",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "notebook",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeSubmissionTypeName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Other",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "other",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeIncentiveName"
+                },
+                {
+                    "@id": "ChallengeSubmissionTypeName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "PredictionFile",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "prediction_file",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeSubmissionTypeName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Publication",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "publication",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeIncentiveName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "SpeakingEngagement",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "speaking_engagement",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeIncentiveName"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Sponsor",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "sponsor",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "ChallengeContributionRole"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
+        },
+        {
+            "@id": "Thing",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Thing",
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
             "sms:required": "sms:false",
-            "sms:validationRules": []
+            "sms:validationRules": null
+        },
+        {
+            "@id": "Upcoming",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "upcoming",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "Thing"
+                },
+                {
+                    "@id": "ChallengeStatus"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://openchallenges.io"
+            },
+            "sms:required": "sms:false"
         }
-    ],
-    "@id": "http://schema.biothings.io/#0.1"
+    ]
 }
