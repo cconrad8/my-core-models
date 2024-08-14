@@ -84,3 +84,11 @@ schematic manifest -c config.yml get -t 'EdamConcept' -s -dt EdamConcept -o '/wo
 ```
 
 
+---
+### to run csv to json converter 
+
+```bash
+python importcsv.py
+```
+# make sure the directory is correct.  If running in CodeSpace, make sure the directory is relative to your github environment (for example /workspaces/core-models/)
+

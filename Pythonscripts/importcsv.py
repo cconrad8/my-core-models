@@ -4,6 +4,7 @@ import csv
 import json
 import chardet
 from collections import defaultdict
+import subprocess
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
@@ -46,7 +47,7 @@ def csv_to_jsonld(csv_file_path, jsonld_file_path):
                 },
                 "sms:displayName": form_name,
                 "sms:requiresDependency": [
-                    {"@id": field} for field in fields
+                    {"@id": f"bts:{field}"} for field in fields
                 ]
             }
             jsonld["@graph"].append(entry)
@@ -54,6 +55,16 @@ def csv_to_jsonld(csv_file_path, jsonld_file_path):
     # Write the JSON-LD data to a file
     with open(jsonld_file_path, 'w', encoding='utf-8') as jsonfile:
         json.dump(jsonld, jsonfile, indent=4)
+
+    # Run the schematic schema convert command
+    try:
+        subprocess.run(
+            ["schematic", "schema", "convert", jsonld_file_path],
+            check=True
+        )
+        flash('Schema conversion completed successfully!')
+    except subprocess.CalledProcessError as e:
+        flash(f'Error during schema conversion: {str(e)}')
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
